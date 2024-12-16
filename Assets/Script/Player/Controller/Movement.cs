@@ -4,18 +4,22 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class Movement : MonoBehaviour
 {
-    public CharacterController PlayerCharacterController;
-    private Camera playerCamera;
-
-    private float rotationX;
-
     public bool DurringCrouchAnimation;
     public bool isCrouching = false;
 
+    private Camera _playerCamera;
+    private CharacterController _playerCharacterController;
+
+    private float rotationX;
+    private float _defaulthYPos = 0f;
+    private float _timer;
+
+    public CharacterController PlayerCharacterController => _playerCharacterController;
+
     private void Awake()
     {
-        PlayerCharacterController = GetComponent<CharacterController>();
-        playerCamera = GetComponentInChildren<Camera>();
+        _playerCharacterController = GetComponent<CharacterController>();
+        _playerCamera = GetComponentInChildren<Camera>();
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -23,10 +27,10 @@ public class Movement : MonoBehaviour
 
     public void Move(Vector3 direction, float gravity, bool canMove)
     {
-        if (!PlayerCharacterController.isGrounded) { direction.y -= gravity; }
+        if (!_playerCharacterController.isGrounded) { direction.y -= gravity; }
 
         if (canMove)
-            PlayerCharacterController.Move(direction * Time.deltaTime);
+            _playerCharacterController.Move(direction * Time.deltaTime);
     }
 
     public void CameraInput( float lookSpeedY, float lookSpeedX, int lookXLimit)
@@ -34,7 +38,7 @@ public class Movement : MonoBehaviour
         rotationX += -Input.GetAxis("Mouse Y") * lookSpeedX;
         rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
 
-        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+        _playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
         transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeedY, 0);
     }
 
@@ -42,7 +46,7 @@ public class Movement : MonoBehaviour
         float standingHeight, float crouchingHeight, float timeToCrouch,
         Vector3 standingCenter, Vector3 crouchingCenter)
     {
-        if (isCrouching && Physics.Raycast(playerCamera.transform.position, Vector3.up, 1f))
+        if (isCrouching && Physics.Raycast(_playerCamera.transform.position, Vector3.up, 1f))
         {
             yield break;
         }
@@ -52,27 +56,41 @@ public class Movement : MonoBehaviour
         float timeElapse = 0f;
 
         float targetHeight = isCrouching ? standingHeight : crouchingHeight;
-        float currentHeight = PlayerCharacterController.height;
+        float currentHeight = _playerCharacterController.height;
 
         Vector3 targetCenter = isCrouching ? standingCenter : crouchingCenter;
-        Vector3 currentCenter = PlayerCharacterController.center;
+        Vector3 currentCenter = _playerCharacterController.center;
 
         while (timeElapse < timeToCrouch)
         {
-            PlayerCharacterController.height = Mathf.Lerp(currentHeight, targetHeight, timeElapse/timeToCrouch);
-            PlayerCharacterController.center = Vector3.Lerp(currentCenter, targetCenter, timeElapse/timeToCrouch);
+            _playerCharacterController.height = Mathf.Lerp(currentHeight, targetHeight, timeElapse/timeToCrouch);
+            _playerCharacterController.center = Vector3.Lerp(currentCenter, targetCenter, timeElapse/timeToCrouch);
 
             timeElapse += Time.deltaTime;
 
             yield return null;
         }
 
-        PlayerCharacterController.height = targetHeight;
-        PlayerCharacterController.center = targetCenter;
+        _playerCharacterController.height = targetHeight;
+        _playerCharacterController.center = targetCenter;
 
         isCrouching = !isCrouching;
 
         DurringCrouchAnimation = false;
 
+    }
+
+    public void HandlHeadBobbing(Vector3 direction, bool isRunning,
+        float crouchSpeed, float runSpeed, float walkSpeed,
+        float crouchAmount, float runAmount, float walkAmount)
+    {
+        if (Mathf.Abs(direction.x) > 0.1f || Mathf.Abs(direction.z) > 0.1f)
+        {
+            _timer += Time.deltaTime * (isCrouching ? crouchSpeed : isRunning ? runSpeed : walkSpeed);
+            _playerCamera.transform.localPosition = new Vector3(
+                _playerCamera.transform.localPosition.x,
+                _defaulthYPos + Mathf.Sin(_timer) * (isCrouching ? crouchAmount : isRunning ? runAmount : walkAmount),
+                _playerCamera.transform.localPosition.z);
+        }
     }
 }

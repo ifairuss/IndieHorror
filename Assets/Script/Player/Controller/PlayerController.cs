@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Controller : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     [Header("ON/OFF")]
     [SerializeField] private bool _canMove = true;
@@ -22,28 +22,48 @@ public class Controller : MonoBehaviour
     [SerializeField] private float _timeToCrouch;
     [SerializeField] private Vector3 _standingCenter;
     [SerializeField] private Vector3 _crouchingCenter;
-
+    [Space]
+    [Header("Head-Bobbing Setting")]
+    [SerializeField] private float _walkBobSpeed;
+    [SerializeField] private float _walkBobAmount;
+    [SerializeField] private float _runBobSpeed;
+    [SerializeField] private float _runBobAmount;
+    [SerializeField] private float _crouchBobSpeed;
+    [SerializeField] private float _crouchBobAmount;
 
     private PlayerInput _inputController;
     private Movement _moveController;
-    private HeadBobbing _headBobbing;
 
     private void Awake()
     {
         _inputController = GetComponent<PlayerInput>();
         _moveController = GetComponent<Movement>();
-        _headBobbing = GetComponentInChildren<HeadBobbing>();
     }
 
     private void Update()
     {
-        _moveController.Move(_inputController.PC(_walkSpeed,_runSpeed,_crouchSpeed), _gravity, _canMove);
+        AddControllers();
+        Crouch();
+    }
 
-        _moveController.CameraInput(_lookXSpeed, _lookYSpeed, _lookXLimit);
-
+    private void Crouch()
+    {
         if (_inputController.isCrouch && !_moveController.DurringCrouchAnimation && !_moveController.isCrouching)
             StartCoroutine(_moveController.CrouchStand(_standingHeight, _crouchingHeight, _timeToCrouch, _standingCenter, _crouchingCenter));
         else if (!_inputController.isCrouch && !_moveController.DurringCrouchAnimation && _moveController.isCrouching)
             StartCoroutine(_moveController.CrouchStand(_standingHeight, _crouchingHeight, _timeToCrouch, _standingCenter, _crouchingCenter));
+    }
+
+    private void AddControllers()
+    {
+        _inputController.CrouchAndStand(_moveController);
+
+        _moveController.Move(_inputController.PC(_walkSpeed, _runSpeed, _crouchSpeed), _gravity, _canMove);
+
+        _moveController.CameraInput(_lookXSpeed, _lookYSpeed, _lookXLimit);
+
+        _moveController.HandlHeadBobbing(_inputController.MoveDirection, _inputController.isRunning,
+        _crouchBobSpeed, _runBobSpeed, _walkBobSpeed,
+        _crouchBobAmount, _runBobAmount, _walkBobAmount);
     }
 }
