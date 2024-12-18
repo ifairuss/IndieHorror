@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector3 _crouchingCenter;
     [Space]
     [Header("Head-Bobbing Setting")]
+    [SerializeField] private float _idleBobSpeed;
+    [SerializeField] private float _idleBobAmount;
     [SerializeField] private float _walkBobSpeed;
     [SerializeField] private float _walkBobAmount;
     [SerializeField] private float _runBobSpeed;
@@ -63,7 +65,7 @@ public class PlayerController : MonoBehaviour
         _moveController.CameraInput(_lookXSpeed, _lookYSpeed, _lookXLimit);
 
         _moveController.HandlHeadBobbing(_inputController.MoveDirection, _inputController.isRunning,
-        _crouchBobSpeed, _runBobSpeed, _walkBobSpeed,
-        _crouchBobAmount, _runBobAmount, _walkBobAmount);
+        _crouchBobSpeed, _runBobSpeed, _walkBobSpeed, _idleBobSpeed,
+        _crouchBobAmount, _runBobAmount, _walkBobAmount, _idleBobAmount);
     }
 }

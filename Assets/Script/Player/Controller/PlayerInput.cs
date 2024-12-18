@@ -8,7 +8,7 @@ public class PlayerInput : MonoBehaviour
 
     public Vector3 MoveDirection = Vector3.zero;
 
-    public bool isRunning => Input.GetKey(_runInput);
+    public bool isRunning => Input.GetKey(_runInput) && isCrouch != true;
     public bool isCrouch;
 
     public Vector3 PC(float walkSpeed, float runSpeed, float crouchSpeed)

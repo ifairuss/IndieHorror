@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
 
     private Camera _playerCamera;
     private CharacterController _playerCharacterController;
+    private Animator _playerAnimator;
 
     private float rotationX;
     private float _defaulthYPos = 0f;
@@ -20,6 +21,7 @@ public class Movement : MonoBehaviour
     {
         _playerCharacterController = GetComponent<CharacterController>();
         _playerCamera = GetComponentInChildren<Camera>();
+        _playerAnimator = GetComponentInChildren<Animator>();
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -78,11 +80,13 @@ public class Movement : MonoBehaviour
 
         DurringCrouchAnimation = false;
 
+        HandAnimation();
+
     }
 
     public void HandlHeadBobbing(Vector3 direction, bool isRunning,
-        float crouchSpeed, float runSpeed, float walkSpeed,
-        float crouchAmount, float runAmount, float walkAmount)
+        float crouchSpeed, float runSpeed, float walkSpeed, float idleSpeed,
+        float crouchAmount, float runAmount, float walkAmount, float idleAmount)
     {
         if (Mathf.Abs(direction.x) > 0.1f || Mathf.Abs(direction.z) > 0.1f)
         {
@@ -92,5 +96,18 @@ public class Movement : MonoBehaviour
                 _defaulthYPos + Mathf.Sin(_timer) * (isCrouching ? crouchAmount : isRunning ? runAmount : walkAmount),
                 _playerCamera.transform.localPosition.z);
         }
+        else
+        {
+            _timer += Time.deltaTime * idleSpeed;
+            _playerCamera.transform.localPosition = new Vector3(
+                _playerCamera.transform.localPosition.x,
+                _defaulthYPos + Mathf.Sin(_timer) * idleAmount,
+                _playerCamera.transform.localPosition.z);
+        }
+    }
+
+    private void HandAnimation()
+    {
+        _playerAnimator.SetBool("isCrouching", isCrouching);
     }
 }
