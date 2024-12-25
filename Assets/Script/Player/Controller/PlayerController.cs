@@ -35,18 +35,26 @@ public class PlayerController : MonoBehaviour
 
     private PlayerInput _inputController;
     private Movement _moveController;
+    private FpsCounter _fpsCounter;
 
     private void Awake()
     {
         _inputController = GetComponent<PlayerInput>();
         _moveController = GetComponent<Movement>();
+        _fpsCounter = GameObject.FindGameObjectWithTag("FPS").GetComponent<FpsCounter>();
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private void Update()
     {
+
         AddControllers();
         Crouch();
+        _fpsCounter.FPS();
     }
+
 
     private void Crouch()
     {

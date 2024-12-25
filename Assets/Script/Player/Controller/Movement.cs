@@ -22,9 +22,6 @@ public class Movement : MonoBehaviour
         _playerCharacterController = GetComponent<CharacterController>();
         _playerCamera = GetComponentInChildren<Camera>();
         _playerAnimator = GetComponentInChildren<Animator>();
-
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 
     public void Move(Vector3 direction, float gravity, bool canMove)
@@ -48,7 +45,7 @@ public class Movement : MonoBehaviour
         float standingHeight, float crouchingHeight, float timeToCrouch,
         Vector3 standingCenter, Vector3 crouchingCenter)
     {
-        if (isCrouching && Physics.Raycast(_playerCamera.transform.position, Vector3.up, 1f))
+        if (isCrouching && Physics.Raycast(_playerCamera.transform.position, Vector3.up, 4f))
         {
             yield break;
         }
