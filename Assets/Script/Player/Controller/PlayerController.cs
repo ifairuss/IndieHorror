@@ -4,6 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     [Header("ON/OFF")]
     [SerializeField] private bool _canMove = true;
+    [SerializeField] private bool _canAnimation = true;
 
     [Header("Movement Setting")]
     [SerializeField] private float _walkSpeed = 2f;
@@ -36,11 +37,13 @@ public class PlayerController : MonoBehaviour
     private PlayerInput _inputController;
     private Movement _moveController;
     private FpsCounter _fpsCounter;
+    private AnimationController _animationController;
 
     private void Awake()
     {
         _inputController = GetComponent<PlayerInput>();
         _moveController = GetComponent<Movement>();
+        _animationController = GetComponent<AnimationController>();
         _fpsCounter = GameObject.FindGameObjectWithTag("FPS").GetComponent<FpsCounter>();
 
         Cursor.lockState = CursorLockMode.Locked;
@@ -49,9 +52,17 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (_canMove)
+        {
+            AddControllers();
+            Crouch();
+        }
 
-        AddControllers();
-        Crouch();
+        if (_canAnimation)
+        {
+            _animationController.ActiveAnimation(_inputController.isFlashlite);
+        }
+
         _fpsCounter.FPS();
     }
 
@@ -67,8 +78,9 @@ public class PlayerController : MonoBehaviour
     private void AddControllers()
     {
         _inputController.CrouchAndStand(_moveController);
+        _inputController.FlashLite();
 
-        _moveController.Move(_inputController.PC(_walkSpeed, _runSpeed, _crouchSpeed), _gravity, _canMove);
+        _moveController.Move(_inputController.PC(_walkSpeed, _runSpeed, _crouchSpeed), _gravity);
 
         _moveController.CameraInput(_lookXSpeed, _lookYSpeed, _lookXLimit);
 

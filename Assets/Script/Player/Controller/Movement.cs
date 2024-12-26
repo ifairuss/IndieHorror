@@ -9,7 +9,6 @@ public class Movement : MonoBehaviour
 
     private Camera _playerCamera;
     private CharacterController _playerCharacterController;
-    private Animator _playerAnimator;
 
     private float rotationX;
     private float _defaulthYPos = 0f;
@@ -17,21 +16,18 @@ public class Movement : MonoBehaviour
 
     public CharacterController PlayerCharacterController => _playerCharacterController;
 
-    private void Awake()
+    private void Start()
     {
         _playerCharacterController = GetComponent<CharacterController>();
         _playerCamera = GetComponentInChildren<Camera>();
-        _playerAnimator = GetComponentInChildren<Animator>();
     }
 
-    public void Move(Vector3 direction, float gravity, bool canMove)
+    public void Move(Vector3 direction, float gravity)
     {
         if (!_playerCharacterController.isGrounded) { direction.y -= gravity; }
 
-        if (canMove)
-            _playerCharacterController.Move(direction * Time.deltaTime);
+        _playerCharacterController.Move(direction * Time.deltaTime);
     }
-
     public void CameraInput( float lookSpeedY, float lookSpeedX, int lookXLimit)
     {
         rotationX += -Input.GetAxis("Mouse Y") * lookSpeedX;
@@ -45,9 +41,15 @@ public class Movement : MonoBehaviour
         float standingHeight, float crouchingHeight, float timeToCrouch,
         Vector3 standingCenter, Vector3 crouchingCenter)
     {
+
         if (isCrouching && Physics.Raycast(_playerCamera.transform.position, Vector3.up, 4f))
         {
+            Debug.DrawRay(_playerCamera.transform.position, new Vector3(0, 4f, 0), Color.red);
             yield break;
+        }
+        else
+        {
+            Debug.DrawRay(_playerCamera.transform.position, new Vector3(0, 4f, 0), Color.green);
         }
 
         DurringCrouchAnimation = true;
@@ -77,19 +79,17 @@ public class Movement : MonoBehaviour
 
         DurringCrouchAnimation = false;
 
-        HandAnimation();
-
     }
 
     public void HandlHeadBobbing(Vector3 direction, bool isRunning,
         float crouchSpeed, float runSpeed, float walkSpeed, float idleSpeed,
         float crouchAmount, float runAmount, float walkAmount, float idleAmount)
     {
-        if (Mathf.Abs(direction.x) > 0.1f || Mathf.Abs(direction.z) > 0.1f)
+        if (Mathf.Abs(direction.x) > 0.5f || Mathf.Abs(direction.z) > 0.5f)
         {
             _timer += Time.deltaTime * (isCrouching ? crouchSpeed : isRunning ? runSpeed : walkSpeed);
             _playerCamera.transform.localPosition = new Vector3(
-                _playerCamera.transform.localPosition.x,
+                _defaulthYPos + Mathf.Cos(_timer / 2) * ((isCrouching ? crouchAmount : isRunning ? runAmount : walkAmount) / 2),
                 _defaulthYPos + Mathf.Sin(_timer) * (isCrouching ? crouchAmount : isRunning ? runAmount : walkAmount),
                 _playerCamera.transform.localPosition.z);
         }
@@ -101,10 +101,5 @@ public class Movement : MonoBehaviour
                 _defaulthYPos + Mathf.Sin(_timer) * idleAmount,
                 _playerCamera.transform.localPosition.z);
         }
-    }
-
-    private void HandAnimation()
-    {
-        _playerAnimator.SetBool("isCrouching", isCrouching);
     }
 }
