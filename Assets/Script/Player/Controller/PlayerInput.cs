@@ -7,6 +7,7 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private KeyCode _runInput = KeyCode.LeftShift;
     [SerializeField] private KeyCode _crouchInput = KeyCode.C;
     [SerializeField] private KeyCode _flashLite = KeyCode.F;
+    [SerializeField] private KeyCode _interaction = KeyCode.E;
 
     public Vector3 MoveDirection = Vector3.zero;
 
@@ -59,6 +60,8 @@ public class PlayerInput : MonoBehaviour
             _timerInput -= Time.deltaTime;
         }
     }
+
+    public KeyCode InteractionKey() => _interaction;
 
     // private Vector3 Phone(float speed)
     // {

@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
     [Header("ON/OFF")]
     [SerializeField] private bool _canMove = true;
     [SerializeField] private bool _canAnimation = true;
+    [SerializeField] private bool _canInteraction = true;
 
     [Header("Movement Setting")]
     [SerializeField] private float _walkSpeed = 2f;
@@ -33,17 +34,24 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _runBobAmount;
     [SerializeField] private float _crouchBobSpeed;
     [SerializeField] private float _crouchBobAmount;
+    [Space]
+    [Header("Interaction Setting")]
+    [SerializeField] private Vector3 _interactionRayPoint;
+    [SerializeField] private float _interactionDistance;
+    [SerializeField] private LayerMask _interactionLayer;
 
     private PlayerInput _inputController;
     private Movement _moveController;
     private FpsCounter _fpsCounter;
     private AnimationController _animationController;
+    private InteractionManager _interactionManager;
 
     private void Awake()
     {
         _inputController = GetComponent<PlayerInput>();
         _moveController = GetComponent<Movement>();
         _animationController = GetComponent<AnimationController>();
+        _interactionManager = GetComponent<InteractionManager>();
         _fpsCounter = GameObject.FindGameObjectWithTag("FPS").GetComponent<FpsCounter>();
 
         Cursor.lockState = CursorLockMode.Locked;
@@ -55,7 +63,6 @@ public class PlayerController : MonoBehaviour
         if (_canMove)
         {
             AddControllers();
-            Crouch();
         }
 
         if (_canAnimation)
@@ -66,8 +73,26 @@ public class PlayerController : MonoBehaviour
         _fpsCounter.FPS();
     }
 
+    private void AddControllers()
+    {
+        MoveController();
+        CameraController();
+        InputController();
+        CrouchController();
+        InteractionController();
 
-    private void Crouch()
+    }
+
+    private void MoveController()
+    {
+        _moveController.Move(_inputController.PC(_walkSpeed, _runSpeed, _crouchSpeed), _gravity);
+
+        _moveController.HandlHeadBobbing(_inputController.MoveDirection, _inputController.isRunning,
+        _crouchBobSpeed, _runBobSpeed, _walkBobSpeed, _idleBobSpeed,
+        _crouchBobAmount, _runBobAmount, _walkBobAmount, _idleBobAmount);
+    }
+
+    private void CrouchController()
     {
         if (_inputController.isCrouch && !_moveController.DurringCrouchAnimation && !_moveController.isCrouching)
             StartCoroutine(_moveController.CrouchStand(_standingHeight, _crouchingHeight, _timeToCrouch, _standingCenter, _crouchingCenter));
@@ -75,17 +100,23 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(_moveController.CrouchStand(_standingHeight, _crouchingHeight, _timeToCrouch, _standingCenter, _crouchingCenter));
     }
 
-    private void AddControllers()
+    private void CameraController()
+    {
+        _moveController.CameraInput(_lookXSpeed, _lookYSpeed, _lookXLimit);
+    }
+
+    private void InputController()
     {
         _inputController.CrouchAndStand(_moveController);
         _inputController.FlashLite();
+    }
 
-        _moveController.Move(_inputController.PC(_walkSpeed, _runSpeed, _crouchSpeed), _gravity);
-
-        _moveController.CameraInput(_lookXSpeed, _lookYSpeed, _lookXLimit);
-
-        _moveController.HandlHeadBobbing(_inputController.MoveDirection, _inputController.isRunning,
-        _crouchBobSpeed, _runBobSpeed, _walkBobSpeed, _idleBobSpeed,
-        _crouchBobAmount, _runBobAmount, _walkBobAmount, _idleBobAmount);
+    private void InteractionController()
+    {
+        if (_canInteraction)
+        {
+            _interactionManager.HandleInteractionCheck(_interactionRayPoint, _interactionDistance);
+            _interactionManager.HandleInteractionInput(_inputController.InteractionKey(), _interactionRayPoint, _interactionDistance, _interactionLayer);
+        }
     }
 }
