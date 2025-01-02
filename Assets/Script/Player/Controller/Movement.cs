@@ -85,7 +85,7 @@ public class Movement : MonoBehaviour
         float crouchSpeed, float runSpeed, float walkSpeed, float idleSpeed,
         float crouchAmount, float runAmount, float walkAmount, float idleAmount)
     {
-        if (Mathf.Abs(direction.x) > 0.5f || Mathf.Abs(direction.z) > 0.5f)
+        if (Mathf.Abs(direction.x) > 0.001f || Mathf.Abs(direction.z) > 0.001f)
         {
             _timer += Time.deltaTime * (isCrouching ? crouchSpeed : isRunning ? runSpeed : walkSpeed);
             _playerCamera.transform.localPosition = new Vector3(

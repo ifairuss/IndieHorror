@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour
     private FpsCounter _fpsCounter;
     private AnimationController _animationController;
     private InteractionManager _interactionManager;
+    private InventoryManager _inventoryManager;
 
     private void Awake()
     {
@@ -53,6 +54,7 @@ public class PlayerController : MonoBehaviour
         _animationController = GetComponent<AnimationController>();
         _interactionManager = GetComponent<InteractionManager>();
         _fpsCounter = GameObject.FindGameObjectWithTag("FPS").GetComponent<FpsCounter>();
+        _inventoryManager = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<InventoryManager>();
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -108,7 +110,8 @@ public class PlayerController : MonoBehaviour
     private void InputController()
     {
         _inputController.CrouchAndStand(_moveController);
-        _inputController.FlashLite();
+
+        if (_inventoryManager.Flashlite == true) { _inputController.FlashLite(); }
     }
 
     private void InteractionController()

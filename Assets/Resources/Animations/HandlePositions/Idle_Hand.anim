@@ -2043,7 +2043,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2055,7 +2055,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2067,7 +2067,43 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandThumb1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandThumb1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandThumb1
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2114,8 +2150,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2127,7 +2163,19 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2150,8 +2198,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2162,8 +2210,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2175,558 +2223,6 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:RightShoulder/mixamorig9:RightArm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:RightShoulder/mixamorig9:RightArm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:RightShoulder/mixamorig9:RightArm
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1/mixamorig9:LeftHandIndex2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1/mixamorig9:LeftHandIndex2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1/mixamorig9:LeftHandIndex2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1/mixamorig9:LeftHandIndex2/mixamorig9:LeftHandIndex3
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1/mixamorig9:LeftHandIndex2/mixamorig9:LeftHandIndex3
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1/mixamorig9:LeftHandIndex2/mixamorig9:LeftHandIndex3
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1/mixamorig9:LeftHandMiddle2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1/mixamorig9:LeftHandMiddle2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1/mixamorig9:LeftHandMiddle2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1/mixamorig9:LeftHandMiddle2/mixamorig9:LeftHandMiddle3
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1/mixamorig9:LeftHandMiddle2/mixamorig9:LeftHandMiddle3
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1/mixamorig9:LeftHandMiddle2/mixamorig9:LeftHandMiddle3
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1/mixamorig9:LeftHandPinky2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1/mixamorig9:LeftHandPinky2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1/mixamorig9:LeftHandPinky2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1/mixamorig9:LeftHandPinky2/mixamorig9:LeftHandPinky3
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1/mixamorig9:LeftHandPinky2/mixamorig9:LeftHandPinky3
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1/mixamorig9:LeftHandPinky2/mixamorig9:LeftHandPinky3
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1/mixamorig9:LeftHandRing2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1/mixamorig9:LeftHandRing2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1/mixamorig9:LeftHandRing2
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1/mixamorig9:LeftHandRing2/mixamorig9:LeftHandRing3
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1/mixamorig9:LeftHandRing2/mixamorig9:LeftHandRing3
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1/mixamorig9:LeftHandRing2/mixamorig9:LeftHandRing3
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandThumb1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandThumb1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandThumb1
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
     path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandThumb1/mixamorig9:LeftHandThumb2
     classID: 4
     script: {fileID: 0}
@@ -2750,7 +2246,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
+    attribute: m_LocalEulerAngles.x
     path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandThumb1/mixamorig9:LeftHandThumb2
     classID: 4
     script: {fileID: 0}
@@ -2762,7 +2258,43 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
     path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/PlayerInventoryHand/Flashlight
     classID: 4
     script: {fileID: 0}
@@ -2786,8 +2318,476 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
+    attribute: m_LocalEulerAngles.x
     path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/PlayerInventoryHand/Flashlight
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1/mixamorig9:LeftHandIndex2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1/mixamorig9:LeftHandIndex2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1/mixamorig9:LeftHandIndex2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1/mixamorig9:LeftHandIndex2/mixamorig9:LeftHandIndex3
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1/mixamorig9:LeftHandIndex2/mixamorig9:LeftHandIndex3
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandIndex1/mixamorig9:LeftHandIndex2/mixamorig9:LeftHandIndex3
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1/mixamorig9:LeftHandMiddle2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1/mixamorig9:LeftHandMiddle2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1/mixamorig9:LeftHandMiddle2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1/mixamorig9:LeftHandMiddle2/mixamorig9:LeftHandMiddle3
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1/mixamorig9:LeftHandMiddle2/mixamorig9:LeftHandMiddle3
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandMiddle1/mixamorig9:LeftHandMiddle2/mixamorig9:LeftHandMiddle3
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1/mixamorig9:LeftHandPinky2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1/mixamorig9:LeftHandPinky2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1/mixamorig9:LeftHandPinky2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1/mixamorig9:LeftHandPinky2/mixamorig9:LeftHandPinky3
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1/mixamorig9:LeftHandPinky2/mixamorig9:LeftHandPinky3
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandPinky1/mixamorig9:LeftHandPinky2/mixamorig9:LeftHandPinky3
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1/mixamorig9:LeftHandRing2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1/mixamorig9:LeftHandRing2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1/mixamorig9:LeftHandRing2
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1/mixamorig9:LeftHandRing2/mixamorig9:LeftHandRing3
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1/mixamorig9:LeftHandRing2/mixamorig9:LeftHandRing3
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:LeftShoulder/mixamorig9:LeftArm/mixamorig9:LeftForeArm/mixamorig9:LeftHand/mixamorig9:LeftHandRing1/mixamorig9:LeftHandRing2/mixamorig9:LeftHandRing3
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:RightShoulder/mixamorig9:RightArm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:RightShoulder/mixamorig9:RightArm
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Camera_Root/CameraController/Main Camera/HoldHandle/Handle/Armature/mixamorig9:Spine2/mixamorig9:RightShoulder/mixamorig9:RightArm
     classID: 4
     script: {fileID: 0}
     flags: 0

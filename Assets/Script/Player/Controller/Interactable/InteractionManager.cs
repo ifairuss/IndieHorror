@@ -14,7 +14,7 @@ public class InteractionManager : MonoBehaviour
     {
         Debug.DrawRay(_playerCamera.transform.position, interactionRayPoint * interactionDistance, Color.red);
 
-        if (Physics.Raycast(_playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance))
+        if (Physics.Raycast(_playerCamera.ViewportPointToRay(interactionRayPoint), out RaycastHit hit, interactionDistance) && hit.collider.gameObject.layer == 10)
         {
             if (hit.collider.gameObject.layer == 10 && (_currentInteraction == null || hit.collider.gameObject.GetInstanceID() != _currentInteraction.GetInstanceID()))
             {
