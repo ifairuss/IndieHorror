@@ -1,8 +1,18 @@
+using UnityEngine;
+
 public class InteractionFlashlite : InteractableAbstract
 {
+    [Header("UI Text Settings")]
+    [SerializeField] private string FirstText = "First";
+    [SerializeField] private string ButtonText = "Button";
+
     public override void OnFocus()
     {
-        _interactionFocus.ActiveButton();
+       if (_playerController.Platforms == PlatformSwitch.PC)
+       {
+            _interactionFocus.ActiveButton();
+            _switchText.SwitchText(FirstText, ButtonText);
+       }
     }
     public override void OnInteractable()
     {

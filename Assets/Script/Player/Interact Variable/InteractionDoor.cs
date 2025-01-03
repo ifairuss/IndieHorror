@@ -4,6 +4,10 @@ public class InteractionDoor : InteractableAbstract
 {   
     [SerializeField] private bool _isOpenDoor;
 
+    [Header("UI Text Settings")]
+    [SerializeField] private string FirstText = "";
+    [SerializeField] private string ButtonText = "[E]";
+
     private Animator _animatorDoor;
 
     private void Start()
@@ -13,7 +17,11 @@ public class InteractionDoor : InteractableAbstract
 
     public override void OnFocus()
     {
-        _interactionFocus.ActiveButton();
+        if (_playerController.Platforms == PlatformSwitch.PC)
+        {
+            _interactionFocus.ActiveButton();
+            _switchText.SwitchText(FirstText, ButtonText);
+        }
     }
     public override void OnInteractable()
     {

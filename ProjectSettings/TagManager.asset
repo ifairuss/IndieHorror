@@ -8,6 +8,8 @@ TagManager:
   - InventoryManager
   - InteractionInterface
   - PressKey
+  - LeftHand
+  - RightHand
   layers:
   - Default
   - TransparentFX

@@ -1,7 +1,17 @@
 using UnityEngine;
 
+
+public enum PlatformSwitch
+{
+    Android,
+    PC
+}
+
 public class PlayerController : MonoBehaviour
 {
+    [Header("Platform Settings")]
+    public PlatformSwitch Platforms = PlatformSwitch.PC;
+
     [Header("ON/OFF")]
     [SerializeField] private bool _canMove = true;
     [SerializeField] private bool _canAnimation = true;
@@ -87,7 +97,10 @@ public class PlayerController : MonoBehaviour
 
     private void MoveController()
     {
-        _moveController.Move(_inputController.PC(_walkSpeed, _runSpeed, _crouchSpeed), _gravity);
+        if (Platforms == PlatformSwitch.PC)
+        {
+            _moveController.Move(_inputController.PC(_walkSpeed, _runSpeed, _crouchSpeed), _gravity);
+        }
 
         _moveController.HandlHeadBobbing(_inputController.MoveDirection, _inputController.isRunning,
         _crouchBobSpeed, _runBobSpeed, _walkBobSpeed, _idleBobSpeed,
@@ -96,10 +109,13 @@ public class PlayerController : MonoBehaviour
 
     private void CrouchController()
     {
-        if (_inputController.isCrouch && !_moveController.DurringCrouchAnimation && !_moveController.isCrouching)
-            StartCoroutine(_moveController.CrouchStand(_standingHeight, _crouchingHeight, _timeToCrouch, _standingCenter, _crouchingCenter));
-        else if (!_inputController.isCrouch && !_moveController.DurringCrouchAnimation && _moveController.isCrouching)
-            StartCoroutine(_moveController.CrouchStand(_standingHeight, _crouchingHeight, _timeToCrouch, _standingCenter, _crouchingCenter));
+        if (Platforms == PlatformSwitch.PC)
+        {
+            if (_inputController.isCrouch && !_moveController.DurringCrouchAnimation && !_moveController.isCrouching)
+                StartCoroutine(_moveController.CrouchStand(_standingHeight, _crouchingHeight, _timeToCrouch, _standingCenter, _crouchingCenter));
+            else if (!_inputController.isCrouch && !_moveController.DurringCrouchAnimation && _moveController.isCrouching)
+                StartCoroutine(_moveController.CrouchStand(_standingHeight, _crouchingHeight, _timeToCrouch, _standingCenter, _crouchingCenter));
+        }
     }
 
     private void CameraController()
@@ -109,9 +125,11 @@ public class PlayerController : MonoBehaviour
 
     private void InputController()
     {
-        _inputController.CrouchAndStand(_moveController);
-
-        if (_inventoryManager.Flashlite == true) { _inputController.FlashLite(); }
+        if (Platforms == PlatformSwitch.PC)
+        {
+            _inputController.CrouchAndStand(_moveController);
+            if (_inventoryManager.Flashlite == true) { _inputController.FlashLite(); }
+        }
     }
 
     private void InteractionController()
