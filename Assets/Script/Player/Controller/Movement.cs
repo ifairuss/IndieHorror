@@ -24,9 +24,9 @@ public class Movement : MonoBehaviour
 
     public void Move(Vector3 direction, float gravity)
     {
-        if (!_playerCharacterController.isGrounded) { direction.y -= gravity; }
+        if (!_playerCharacterController.isGrounded) { direction.y += gravity * Time.deltaTime; }
 
-        _playerCharacterController.Move(direction * Time.deltaTime);
+        _playerCharacterController.Move(direction);
     }
     public void CameraInput( float lookSpeedY, float lookSpeedX, int lookXLimit)
     {
@@ -44,12 +44,12 @@ public class Movement : MonoBehaviour
 
         if (isCrouching && Physics.Raycast(_playerCamera.transform.position, Vector3.up, 4f))
         {
-            Debug.DrawRay(_playerCamera.transform.position, new Vector3(0, 4f, 0), Color.red);
+            Debug.DrawRay(_playerCamera.transform.position, new Vector3(0, 6f, 0), Color.red);
             yield break;
         }
         else
         {
-            Debug.DrawRay(_playerCamera.transform.position, new Vector3(0, 4f, 0), Color.green);
+            Debug.DrawRay(_playerCamera.transform.position, new Vector3(0, 6f, 0), Color.green);
         }
 
         DurringCrouchAnimation = true;

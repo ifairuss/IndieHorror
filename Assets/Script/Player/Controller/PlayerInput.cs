@@ -11,7 +11,7 @@ public class PlayerInput : MonoBehaviour
 
     public Vector3 MoveDirection = Vector3.zero;
 
-    public bool isRunning => Input.GetKey(_runInput) && isCrouch != true;
+    public bool isRunning;
     public bool isCrouch;
     public bool isFlashlite;
 
@@ -22,14 +22,15 @@ public class PlayerInput : MonoBehaviour
         float directionY = (isCrouch ? crouchSpeed : isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal");
         float directionX = (isCrouch ? crouchSpeed : isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Vertical");
 
-        float moveDirectionY = MoveDirection.y;
+        MoveDirection = (transform.TransformDirection(Vector3.forward) * directionX)
+                        + (transform.TransformDirection(Vector3.right) * directionY);
 
-        MoveDirection = (transform.TransformDirection(Vector3.forward) * directionX
-                        + transform.TransformDirection(Vector3.right) * directionY);
+        return MoveDirection * Time.deltaTime;
+    }
 
-        MoveDirection.y = moveDirectionY;
-
-        return MoveDirection;
+    public void RuningStaminaCheck(float currentSprint)
+    {
+        isRunning = Input.GetKey(_runInput) && !isCrouch && currentSprint > 1;
     }
 
     public void CrouchAndStand(Movement _movement)

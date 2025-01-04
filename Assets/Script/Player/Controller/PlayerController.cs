@@ -23,6 +23,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _crouchSpeed = 2f;
     [SerializeField] private float _gravity = 9.81f;
     [Space]
+    [Header("Stamina Parameters")]
+    [SerializeField] private float _maxStamina;
+    [SerializeField] private float _staminaUseMultiplier;
+    [SerializeField] private float _timeBeforeStaminaRegenStarts;
+    [SerializeField] private float _staminaValueIncrement;
+    [SerializeField] private float _staminaTimeIncrement;
+    [Space]
     [Header("Look Setting")]
     [SerializeField] private float _lookXSpeed = 1f;
     [SerializeField] private float _lookYSpeed = 1f;
@@ -56,11 +63,13 @@ public class PlayerController : MonoBehaviour
     private AnimationController _animationController;
     private InteractionManager _interactionManager;
     private InventoryManager _inventoryManager;
+    private StaminaSystem _staminaManager;
 
     private void Awake()
     {
         _inputController = GetComponent<PlayerInput>();
         _moveController = GetComponent<Movement>();
+        _staminaManager = GetComponent<StaminaSystem>();
         _animationController = GetComponent<AnimationController>();
         _interactionManager = GetComponent<InteractionManager>();
         _fpsCounter = GameObject.FindGameObjectWithTag("FPS").GetComponent<FpsCounter>();
@@ -92,6 +101,7 @@ public class PlayerController : MonoBehaviour
         InputController();
         CrouchController();
         InteractionController();
+        StaminaController();
 
     }
 
@@ -128,6 +138,8 @@ public class PlayerController : MonoBehaviour
         if (Platforms == PlatformSwitch.PC)
         {
             _inputController.CrouchAndStand(_moveController);
+            _inputController.RuningStaminaCheck(_staminaManager.Stamina());
+
             if (_inventoryManager.Flashlite == true) { _inputController.FlashLite(); }
         }
     }
@@ -139,5 +151,12 @@ public class PlayerController : MonoBehaviour
             _interactionManager.HandleInteractionCheck(_interactionRayPoint, _interactionDistance);
             _interactionManager.HandleInteractionInput(_inputController.InteractionKey(), _interactionRayPoint, _interactionDistance, _interactionLayer);
         }
+    }
+
+    private void StaminaController()
+    {
+        _staminaManager.StaminaSubtraction(_inputController.isRunning, _inputController.isCrouch, 
+                                           _moveController.PlayerCharacterController.isGrounded,
+                                           _staminaUseMultiplier, _timeBeforeStaminaRegenStarts, _staminaTimeIncrement, _staminaValueIncrement, _maxStamina);
     }
 }

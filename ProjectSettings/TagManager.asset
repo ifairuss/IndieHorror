@@ -10,6 +10,7 @@ TagManager:
   - PressKey
   - LeftHand
   - RightHand
+  - StaminaUI
   layers:
   - Default
   - TransparentFX
