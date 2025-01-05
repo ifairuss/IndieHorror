@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7443606301784585729}
   - component: {fileID: 4980087392155240375}
   - component: {fileID: 8651740081731116158}
-  - component: {fileID: 6282545564826393993}
   - component: {fileID: 6156660247202941788}
-  m_Layer: 0
+  - component: {fileID: 6234087891113800519}
+  - component: {fileID: 6941963255654075744}
+  m_Layer: 2
   m_Name: Revolver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,13 +29,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5771790058733126334}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -35.769775, y: 10.56382, z: -113.02911}
   m_LocalScale: {x: 1.5000001, y: 1.5000001, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4980087392155240375
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -88,27 +89,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6282545564826393993
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5771790058733126334}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.24528544, y: 0.7838797, z: 1.4149117}
-  m_Center: {x: 2.6144854e-15, y: 0.18397807, z: 0.049963564}
 --- !u!54 &6156660247202941788
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -134,5 +114,45 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 42
   m_CollisionDetection: 0
+--- !u!114 &6234087891113800519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5771790058733126334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422a621c9f5b0ca4ebd75427ae7104f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inventoryManager: {fileID: 0}
+  _interactionFocus: {fileID: 0}
+  _switchText: {fileID: 0}
+  _playerAnimator: {fileID: 0}
+  _playerController: {fileID: 0}
+  FirstText: Pick Up
+  ButtonText: '[E]'
+--- !u!65 &6941963255654075744
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5771790058733126334}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.2452854, y: 0.7820015, z: 1.4149117}
+  m_Center: {x: -1.573271e-15, y: 0.1849171, z: 0.049963556}

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class InteractionFlashlite : InteractableAbstract
+public class InteractionKnife : InteractableAbstract
 {
     [Header("UI Text Settings")]
     [SerializeField] private string FirstText = "First";
@@ -8,15 +8,19 @@ public class InteractionFlashlite : InteractableAbstract
 
     public override void OnFocus()
     {
-       if (_playerController.Platforms == PlatformSwitch.PC)
-       {
+        if (_playerController.Platforms == PlatformSwitch.PC)
+        {
             _interactionFocus.ActiveButton();
             _switchText.SwitchText(FirstText, ButtonText);
-       }
+        }
     }
     public override void OnInteractable()
     {
-        _inventoryManager.FlashLitePickUp(true);
+        if (_inventoryManager.RightHandGameObject != null)
+        {
+            Instantiate(_inventoryManager.RightHandGameObject, _playerController.transform.position + Vector3.up * 2 + _playerController.transform.forward * 5, Quaternion.identity);
+        }
+        _inventoryManager.PickUpItems(ItemsRightHand.Knife);
         _interactionFocus.DisableButton();
         Destroy(gameObject);
     }
