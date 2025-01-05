@@ -2288,6 +2288,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 23699801759568714, guid: e0103d1b64034c74eba10f4ce1dda469, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 23699801759568714, guid: e0103d1b64034c74eba10f4ce1dda469, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f95053a92263854d95d4dd783b789a9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29652,13 +29660,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23439843025586598, guid: ffbc1aade2cdd2b4faa7395924d089d9, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 23439843025586598, guid: ffbc1aade2cdd2b4faa7395924d089d9, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 86923a96b26230d44a53653d882db35e, type: 3}
     - target: {fileID: 2143737306045259609, guid: ffbc1aade2cdd2b4faa7395924d089d9, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: e439be6e063e29047b324a881c57c37d, type: 2}
     - target: {fileID: 9000078313800377804, guid: ffbc1aade2cdd2b4faa7395924d089d9, type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000078313800377804, guid: ffbc1aade2cdd2b4faa7395924d089d9, type: 3}
+      propertyPath: m_Mass
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000078313800377804, guid: ffbc1aade2cdd2b4faa7395924d089d9, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000078313800377804, guid: ffbc1aade2cdd2b4faa7395924d089d9, type: 3}
       propertyPath: m_Constraints
       value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000078313800377804, guid: ffbc1aade2cdd2b4faa7395924d089d9, type: 3}
+      propertyPath: m_ImplicitCom
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000078313800377804, guid: ffbc1aade2cdd2b4faa7395924d089d9, type: 3}
+      propertyPath: m_ImplicitTensor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

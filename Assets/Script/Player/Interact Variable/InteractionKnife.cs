@@ -18,7 +18,7 @@ public class InteractionKnife : InteractableAbstract
     {
         if (_inventoryManager.RightHandGameObject != null)
         {
-            Instantiate(_inventoryManager.RightHandGameObject, _playerController.transform.position + Vector3.up * 2 + _playerController.transform.forward * 5, Quaternion.identity);
+            Instantiate(_inventoryManager.RightHandGameObject, _playerController.transform.position + Vector3.up * 2f + _playerController.transform.forward * 5f, Quaternion.Euler(0, 0, 90));
         }
         _inventoryManager.PickUpItems(ItemsRightHand.Knife);
         _interactionFocus.DisableButton();
