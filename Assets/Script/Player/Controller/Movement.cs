@@ -10,6 +10,9 @@ public class Movement : MonoBehaviour
     private Camera _playerCamera;
     private CharacterController _playerCharacterController;
 
+    [HideInInspector]public Vector2 _lookAxis;
+    private float mouseRotationX;
+
     private float rotationX;
     private float _defaulthYPos = 0f;
     private float _timer;
@@ -28,13 +31,24 @@ public class Movement : MonoBehaviour
 
         _playerCharacterController.Move(direction);
     }
-    public void CameraInput( float lookSpeedY, float lookSpeedX, int lookXLimit)
+    public void CameraInputPC( float lookSpeedY, float lookSpeedX, int lookXLimit)
     {
         rotationX += -Input.GetAxis("Mouse Y") * lookSpeedX;
         rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
 
         _playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
         _playerCharacterController.transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeedY, 0);
+    }
+    public void CameraInputAndroid(float lookSpeedY, float lookSpeedX, int lookXLimit)
+    {
+        float MoveX = _lookAxis.x;
+        float MoveY = _lookAxis.y;
+
+        mouseRotationX -= MoveY * lookSpeedX;
+        mouseRotationX = Mathf.Clamp(mouseRotationX, -lookXLimit, lookXLimit);
+
+        _playerCamera.transform.localRotation = Quaternion.Euler(mouseRotationX, 0, 0);
+        _playerCharacterController.transform.rotation *= Quaternion.Euler(0, MoveX * lookSpeedY, 0);
     }
 
     public IEnumerator CrouchStand(

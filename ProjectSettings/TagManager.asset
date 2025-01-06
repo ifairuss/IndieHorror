@@ -11,6 +11,8 @@ TagManager:
   - LeftHand
   - RightHand
   - StaminaUI
+  - PC
+  - Android
   layers:
   - Default
   - TransparentFX

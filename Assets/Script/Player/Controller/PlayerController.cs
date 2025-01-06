@@ -10,7 +10,7 @@ public enum PlatformSwitch
 public class PlayerController : MonoBehaviour
 {
     [Header("Platform Settings")]
-    public PlatformSwitch Platforms = PlatformSwitch.PC;
+    public PlatformSwitch Platforms;
 
     [Header("ON/OFF")]
     [SerializeField] private bool _canMove = true;
@@ -64,6 +64,7 @@ public class PlayerController : MonoBehaviour
     private InteractionManager _interactionManager;
     private InventoryManager _inventoryManager;
     private StaminaSystem _staminaManager;
+    private FixedTouchField _fixedTouchField;
 
     private void Awake()
     {
@@ -74,9 +75,13 @@ public class PlayerController : MonoBehaviour
         _interactionManager = GetComponent<InteractionManager>();
         _fpsCounter = GameObject.FindGameObjectWithTag("FPS").GetComponent<FpsCounter>();
         _inventoryManager = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<InventoryManager>();
+        _fixedTouchField = GameObject.FindGameObjectWithTag("Android").GetComponentInChildren<FixedTouchField>();
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        if (Platforms == PlatformSwitch.PC)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 
     private void Update()
@@ -109,7 +114,11 @@ public class PlayerController : MonoBehaviour
     {
         if (Platforms == PlatformSwitch.PC)
         {
-            _moveController.Move(_inputController.PC(_walkSpeed, _runSpeed, _crouchSpeed), _gravity);
+            _moveController.Move(_inputController.PC(_walkSpeed, _runSpeed, _crouchSpeed, Platforms), _gravity);
+        }
+        else if (Platforms == PlatformSwitch.Android)
+        {
+            _moveController.Move(_inputController.Android(_walkSpeed, _runSpeed, _crouchSpeed, Platforms), _gravity);
         }
 
         _moveController.HandlHeadBobbing(_inputController.MoveDirection, _inputController.isRunning,
@@ -130,7 +139,15 @@ public class PlayerController : MonoBehaviour
 
     private void CameraController()
     {
-        _moveController.CameraInput(_lookXSpeed, _lookYSpeed, _lookXLimit);
+        if (Platforms == PlatformSwitch.PC)
+        {
+            _moveController.CameraInputPC(_lookXSpeed, _lookYSpeed, _lookXLimit);
+        }
+        else if (Platforms == PlatformSwitch.Android)
+        {
+            _moveController.CameraInputAndroid(_lookXSpeed, _lookYSpeed, _lookXLimit);
+            _fixedTouchField.TouchControllerPlatform();
+        }
     }
 
     private void InputController()
