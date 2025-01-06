@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class ItemPointer : MonoBehaviour
 {
-    private Transform _player;
+    private Camera _player;
     private RectTransform  _gameObject;
 
     private void Start()
     {
-        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        _player = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Camera>();
         _gameObject = GetComponentInChildren<RectTransform>();
     }
 
@@ -18,7 +18,7 @@ public class ItemPointer : MonoBehaviour
 
     public void ItemsPointer()
     {
-        float distance = Vector3.Distance(transform.position, _player.position);
+        float distance = Vector3.Distance(transform.position, _player.transform.position);
 
         if (distance <= 15)
         {
