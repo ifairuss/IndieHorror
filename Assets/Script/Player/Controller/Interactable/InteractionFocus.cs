@@ -1,23 +1,22 @@
-using TMPro;
 using UnityEngine;
 
 public class InteractionFocus : MonoBehaviour
 {
-    private RectTransform InteractionButton;
+    private RectTransform InteractionButtonText;
 
     private void Start()
     {
-        InteractionButton = GameObject.FindGameObjectWithTag("PressKey").GetComponent<RectTransform>();
-        InteractionButton.gameObject.SetActive(false);
+        InteractionButtonText = GameObject.FindGameObjectWithTag("PressKey").GetComponent<RectTransform>();
+        InteractionButtonText.gameObject.SetActive(false);
     }
 
     public void ActiveButton()
     {
-        InteractionButton.gameObject.SetActive(true);
+        InteractionButtonText.gameObject.SetActive(true);
     }
 
     public void DisableButton()
     {
-        InteractionButton.gameObject.SetActive(false);
+        InteractionButtonText.gameObject.SetActive(false);
     }
 }

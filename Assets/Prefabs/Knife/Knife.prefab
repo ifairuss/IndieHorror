@@ -163,13 +163,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 015357702a95008419adbb0fa4807142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inventoryManager: {fileID: 0}
-  _interactionFocus: {fileID: 0}
-  _switchText: {fileID: 0}
-  _playerAnimator: {fileID: 0}
-  _playerController: {fileID: 0}
-  FirstText: Pick Up
-  ButtonText: '[E]'
+  InventoryManager: {fileID: 0}
+  InteractionFocus: {fileID: 0}
+  SwitchText: {fileID: 0}
+  PlayerAnimator: {fileID: 0}
+  PlayerController: {fileID: 0}
+  KeyManager: {fileID: 0}
+  FirstText: Knife
+  ButtonText: 'Press [E]'
 --- !u!1 &1488283475062862338
 GameObject:
   m_ObjectHideFlags: 0

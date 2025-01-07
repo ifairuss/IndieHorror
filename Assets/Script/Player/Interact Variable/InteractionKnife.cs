@@ -8,24 +8,21 @@ public class InteractionKnife : InteractableAbstract
 
     public override void OnFocus()
     {
-        if (_playerController.Platforms == PlatformSwitch.PC)
-        {
-            _interactionFocus.ActiveButton();
-            _switchText.SwitchText(FirstText, ButtonText);
-        }
+        InteractionFocus.ActiveButton();
+        SwitchText.SwitchText(FirstText, ButtonText, PlayerController.Platforms);
     }
     public override void OnInteractable()
     {
-        if (_inventoryManager.RightHandGameObject != null)
+        if (InventoryManager.RightHandGameObject != null)
         {
-            Instantiate(_inventoryManager.RightHandGameObject, _playerController.transform.position + Vector3.up * 2f + _playerController.transform.forward * 5f, Quaternion.Euler(0, 0, 90));
+            Instantiate(InventoryManager.RightHandGameObject, PlayerController.transform.position + Vector3.up * 2f + PlayerController.transform.forward * 5f, Quaternion.Euler(0, 0, 90));
         }
-        _inventoryManager.PickUpItems(ItemsRightHand.Knife);
-        _interactionFocus.DisableButton();
+        InventoryManager.PickUpItems(ItemsRightHand.Knife);
+        InteractionFocus.DisableButton();
         Destroy(gameObject);
     }
     public override void OnLoseFocus()
     {
-        _interactionFocus.DisableButton();
+        InteractionFocus.DisableButton();
     }
 }

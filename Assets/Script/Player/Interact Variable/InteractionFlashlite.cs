@@ -8,20 +8,17 @@ public class InteractionFlashlite : InteractableAbstract
 
     public override void OnFocus()
     {
-       if (_playerController.Platforms == PlatformSwitch.PC)
-       {
-            _interactionFocus.ActiveButton();
-            _switchText.SwitchText(FirstText, ButtonText);
-       }
+        InteractionFocus.ActiveButton();
+        SwitchText.SwitchText(FirstText, ButtonText, PlayerController.Platforms);
     }
     public override void OnInteractable()
     {
-        _inventoryManager.FlashLitePickUp(true);
-        _interactionFocus.DisableButton();
+        InventoryManager.FlashLitePickUp(true);
+        InteractionFocus.DisableButton();
         Destroy(gameObject);
     }
     public override void OnLoseFocus()
     {
-        _interactionFocus.DisableButton();
+        InteractionFocus.DisableButton();
     }
 }

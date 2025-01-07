@@ -37,7 +37,7 @@ public class InteractionManager : MonoBehaviour
     {
         if (Input.GetKeyDown(interactionKey) && _currentInteraction != null && Physics.Raycast(_playerCamera.ViewportPointToRay(interactionRayPoint), interactionDistance, interactionLayer))
         {
-            if (_currentInteraction._playerController.Platforms == PlatformSwitch.PC)
+            if (_currentInteraction.PlayerController.Platforms == PlatformSwitch.PC)
             {
                 _currentInteraction.OnInteractable();
             }

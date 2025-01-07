@@ -3,20 +3,22 @@ using UnityEngine;
 public abstract class InteractableAbstract : MonoBehaviour
 {
     [Space]
-    public InventoryManager _inventoryManager;
-    public InteractionFocus _interactionFocus;
-    public PressKeyInteraction _switchText;
-    public Animator _playerAnimator;
-    public PlayerController _playerController;
+    public InventoryManager InventoryManager;
+    public InteractionFocus InteractionFocus;
+    public PressKeyInteraction SwitchText;
+    public Animator PlayerAnimator;
+    public PlayerController PlayerController;
+    public KeyManager KeyManager;
 
     public virtual void Awake()
     {
         gameObject.layer = 10;
 
-        _inventoryManager = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<InventoryManager>();
-        _interactionFocus = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<InteractionFocus>();
-        _switchText = GameObject.FindGameObjectWithTag("PressKey").GetComponent<PressKeyInteraction>();
-        _playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        InventoryManager = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<InventoryManager>();
+        InteractionFocus = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<InteractionFocus>();
+        KeyManager = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<KeyManager>();
+        SwitchText = GameObject.FindGameObjectWithTag("PressKey").GetComponent<PressKeyInteraction>();
+        PlayerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     public virtual void OnFocus() { }
