@@ -618,9 +618,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -667,9 +670,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -2943,9 +2949,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -5701,9 +5710,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 1
   _isOpenDoor: 0
   _key: 4
@@ -6325,7 +6337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5873801693984400064, guid: 3af6176e1598452469f2c1c6307ccba3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 42.49014
+      value: 48.01
       objectReference: {fileID: 0}
     - target: {fileID: 5873801693984400064, guid: 3af6176e1598452469f2c1c6307ccba3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10854,9 +10866,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -11723,9 +11738,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -12758,9 +12776,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -12932,9 +12953,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
+  _doorAngle: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -13500,7 +13524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 29e497487ae706f4a90f81cac1f10ccf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 299
+      value: 287.1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 29e497487ae706f4a90f81cac1f10ccf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13508,23 +13532,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 29e497487ae706f4a90f81cac1f10ccf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 240.09
+      value: 188.74
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 29e497487ae706f4a90f81cac1f10ccf, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.0000000372529
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 29e497487ae706f4a90f81cac1f10ccf, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000018272809
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 29e497487ae706f4a90f81cac1f10ccf, type: 3}
-      propertyPath: m_LocalRotation.y
       value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 29e497487ae706f4a90f81cac1f10ccf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 29e497487ae706f4a90f81cac1f10ccf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000043958426
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 29e497487ae706f4a90f81cac1f10ccf, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.70710677
+      value: 0.0000004808004
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 29e497487ae706f4a90f81cac1f10ccf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13536,7 +13560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 29e497487ae706f4a90f81cac1f10ccf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -180
+      value: -360
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 29e497487ae706f4a90f81cac1f10ccf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18446,9 +18470,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -18988,9 +19015,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -20871,9 +20901,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -21360,9 +21393,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -22615,9 +22651,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -29204,9 +29243,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -30100,9 +30142,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -30394,9 +30439,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0.70710677, z: 0, w: 0.70710677}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0.3
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -30729,9 +30777,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -30772,9 +30823,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -32642,9 +32696,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -40693,9 +40750,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -41147,9 +41207,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -46709,9 +46772,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -56065,9 +56131,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 0
   _isOpenDoor: 0
   _key: 0
@@ -56088,9 +56157,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 1
   _isOpenDoor: 0
   _key: 5
@@ -56581,9 +56653,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 1
   _isOpenDoor: 0
   _key: 3
@@ -56604,9 +56679,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 1
   _isOpenDoor: 0
   _key: 2
@@ -56627,9 +56705,12 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _openAngle: {x: 0, y: 0, z: 0, w: 0}
+  _closedAngle: {x: 0, y: 0, z: 0, w: 0}
+  _doorAngle: {x: 0, y: 0, z: 0, w: 0}
+  _timeToAction: 0
   _isLoockedDoor: 1
   _isOpenDoor: 0
   _key: 1

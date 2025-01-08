@@ -1,8 +1,10 @@
+using System.Collections;
 using UnityEngine;
 
 public class InteractionDoor : InteractableAbstract
 {
     [Header("Door Setting")]
+    [Space]
     [SerializeField] private bool _isLoockedDoor;
     [SerializeField] private bool _isOpenDoor;
     [SerializeField] private KeyVariable _key;
@@ -10,13 +12,6 @@ public class InteractionDoor : InteractableAbstract
     [Header("UI Text Settings")]
     [SerializeField] private string FirstText = "";
     [SerializeField] private string ButtonText = "[E]";
-
-    private Animator _animatorDoor;
-
-    private void Start()
-    {
-        _animatorDoor = GetComponent<Animator>();
-    }
 
     public override void OnFocus()
     {
@@ -29,13 +24,9 @@ public class InteractionDoor : InteractableAbstract
         {
             if (_isOpenDoor == false)
             {
-                
-                _isOpenDoor = true;
             }
             else
             {
-                
-                _isOpenDoor = false;
             }
         }
         else

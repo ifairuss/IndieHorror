@@ -6,7 +6,6 @@ public abstract class InteractableAbstract : MonoBehaviour
     public InventoryManager InventoryManager;
     public InteractionFocus InteractionFocus;
     public PressKeyInteraction SwitchText;
-    public Animator PlayerAnimator;
     public PlayerController PlayerController;
     public KeyManager KeyManager;
 
