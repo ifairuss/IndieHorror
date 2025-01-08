@@ -29,12 +29,12 @@ public class InteractionDoor : InteractableAbstract
         {
             if (_isOpenDoor == false)
             {
-                _animatorDoor.SetBool("isDoorOpen", true);
+                
                 _isOpenDoor = true;
             }
             else
             {
-                _animatorDoor.SetBool("isDoorOpen", false);
+                
                 _isOpenDoor = false;
             }
         }
