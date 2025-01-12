@@ -5,7 +5,8 @@ public enum ItemsRightHand
 {
     nothing,
     Revolver,
-    Knife
+    Knife,
+    Crowbar
 }
 public class InventoryManager : MonoBehaviour
 {
@@ -13,17 +14,19 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private bool _flashliteThereIs = false;
     [SerializeField] private bool _revolverThereIs = false;
     [SerializeField] private bool _knifeThereIs = false;
+    [SerializeField] private bool _crowbarThereIs = false;
     [Space]
     [SerializeField] private GameObject RevolverPrefab;
     [SerializeField] private GameObject KnifePrefab;
+    [SerializeField] private GameObject CrowbarPrefab;
 
     public ItemsRightHand RightHandItems;
     public GameObject RightHandGameObject;
 
     public bool Flashlite => _flashliteThereIs;
     public bool Revolver => _revolverThereIs;
-
     public bool Knife => _knifeThereIs;
+    public bool Crowbar => _crowbarThereIs;
 
     public void FlashLitePickUp(bool flashLite)
     {
@@ -38,18 +41,31 @@ public class InventoryManager : MonoBehaviour
         {
             case ItemsRightHand.nothing:
                 _revolverThereIs = false;
-                RightHandGameObject = null;
                 _knifeThereIs = false;
+                _crowbarThereIs = false;
+                //-------------------------
+                RightHandGameObject = null;
                 break;
             case ItemsRightHand.Revolver:
                 _revolverThereIs = true;
-                RightHandGameObject = RevolverPrefab;
                 _knifeThereIs = false;
+                _crowbarThereIs = false;
+                //-------------------------
+                RightHandGameObject = RevolverPrefab;
                 break;
             case ItemsRightHand.Knife:
                 _knifeThereIs = true;
-                RightHandGameObject = KnifePrefab;
                 _revolverThereIs = false;
+                _crowbarThereIs = false;
+                //------------------------
+                RightHandGameObject = KnifePrefab;
+                break;
+            case ItemsRightHand.Crowbar:
+                _crowbarThereIs = true;
+                _knifeThereIs = false;
+                _revolverThereIs = false;
+                //------------------------
+                RightHandGameObject = CrowbarPrefab;
                 break;
         }
     }

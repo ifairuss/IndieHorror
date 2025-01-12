@@ -93,7 +93,7 @@ public class PlayerController : MonoBehaviour
 
         if (_canAnimation)
         {
-            _animationController.ActiveAnimation(_inputController.isFlashlite, _inventoryManager.Revolver, _inventoryManager.Knife);
+            _animationController.ActiveAnimation(_inputController.isFlashlite, _inventoryManager.Revolver, _inventoryManager.Knife, _inventoryManager.Crowbar);
         }
 
         _fpsCounter.FPS();

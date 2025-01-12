@@ -17,9 +17,9 @@ public class AnimationController : MonoBehaviour
         _rightHandAnimation = GetComponentInChildren<RightHandAnimation>();
     }
 
-    public void ActiveAnimation(bool isFlashlite, bool isRevolver, bool isKnife)
+    public void ActiveAnimation(bool isFlashlite, bool isRevolver, bool isKnife, bool isCrowbar)
     {
         _leftHandAnimation.TakeInFlashlite(_leftHand, isFlashlite);
-        _rightHandAnimation.PickUpItems(_rightHand, isRevolver, isKnife);
+        _rightHandAnimation.PickUpItems(_rightHand, isRevolver, isKnife, isCrowbar);
     }
 }
