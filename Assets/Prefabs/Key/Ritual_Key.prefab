@@ -568,7 +568,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5986610134702888745}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e439be6e063e29047b324a881c57c37d, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -624,7 +624,6 @@ MonoBehaviour:
   InventoryManager: {fileID: 0}
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
-  PlayerAnimator: {fileID: 0}
   PlayerController: {fileID: 0}
   KeyManager: {fileID: 0}
   _firstText: 'Key[Ritual]'

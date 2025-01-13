@@ -15,6 +15,8 @@ public class KeyManager : MonoBehaviour
     public bool Ritual => _ritualKey;
     public bool SummerKitchen => _summerKitchenKey;
 
+    public bool GrillLocker;
+
     public void PickUpKey(KeyVariable keyVariable)
     {
         KeyVariable key = keyVariable;

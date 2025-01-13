@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class InteractionDoor : InteractableAbstract
@@ -11,6 +10,7 @@ public class InteractionDoor : InteractableAbstract
     [SerializeField] private bool _isLoockedDoor;
     [SerializeField] private bool _isOpenDoor;
     [SerializeField] private KeyVariable _key;
+    [SerializeField] private LockerVariable _locker;
 
     [Header("UI Text Settings")]
     [SerializeField] private string FirstText = "";
@@ -42,6 +42,8 @@ public class InteractionDoor : InteractableAbstract
     }
     public override void OnInteractable()
     {
+        if (_isLoockedDoor) { UnlockLockerDoor(); }
+
 
         if (!_isLoockedDoor)
         {
@@ -62,6 +64,14 @@ public class InteractionDoor : InteractableAbstract
     public override void OnLoseFocus()
     {
         InteractionFocus.DisableButton();
+    }
+
+    private void UnlockLockerDoor()
+    {
+        if (_locker == LockerVariable.GrillWindow)
+        {
+            if (KeyManager.GrillLocker) { _isLoockedDoor = false; }
+        }
     }
 
     private void UnlockDoor()
