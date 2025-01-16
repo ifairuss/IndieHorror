@@ -68,9 +68,9 @@ public class InteractionDoor : InteractableAbstract
 
     private void UnlockLockerDoor()
     {
-        if (_locker == LockerVariable.GrillWindow)
+        if (_locker == LockerVariable.LatticeWindow)
         {
-            if (KeyManager.GrillLocker) { _isLoockedDoor = false; }
+            if (KeyManager.LatticeLocker) { _isLoockedDoor = false; }
         }
     }
 

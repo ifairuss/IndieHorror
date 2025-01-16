@@ -3,11 +3,11 @@ using UnityEngine;
 public abstract class InteractableAbstract : MonoBehaviour
 {
     [Space]
-    public InventoryManager InventoryManager;
-    public InteractionFocus InteractionFocus;
-    public PressKeyInteraction SwitchText;
-    public PlayerController PlayerController;
-    public KeyManager KeyManager;
+    [HideInInspector] public InventoryManager InventoryManager;
+    [HideInInspector] public InteractionFocus InteractionFocus;
+    [HideInInspector] public PressKeyInteraction SwitchText;
+    [HideInInspector] public PlayerController PlayerController;
+    [HideInInspector] public KeyManager KeyManager;
 
     public virtual void Awake()
     {

@@ -4,7 +4,7 @@ using UnityEngine;
 public enum LockerVariable
 { 
     None,
-    GrillWindow
+    LatticeWindow
 }
 public class InteractionLocker : InteractableAbstract
 {
@@ -46,7 +46,9 @@ public class InteractionLocker : InteractableAbstract
             rb.AddForce(Vector3.forward * 3, ForceMode.Impulse);
             gameObject.layer = 0;
             _locked = false;
-            KeyManager.GrillLocker = true;
+
+            if (_lockerVariable == LockerVariable.LatticeWindow) { KeyManager.LatticeLocker = true; }
+
         }
     }
 }
