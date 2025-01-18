@@ -1,22 +1,10 @@
 using UnityEngine;
 
-public enum KeyVariable
-{
-    None,
-    Kitchen,
-    House,
-    Basement,
-    Ritual,
-    SummerKitchen
-}
-
 public class InteractionKey : InteractableAbstract
 {
     [Header("UI Text Settings")]
     [SerializeField] private string _firstText = "First";
     [SerializeField] private string _buttonText = "Button";
-    [Header("Key Variable")]
-    [SerializeField] private KeyVariable _keyVariable;
 
     public override void OnFocus()
     {
@@ -25,7 +13,6 @@ public class InteractionKey : InteractableAbstract
     }
     public override void OnInteractable()
     {
-        KeyManager.PickUpKey(_keyVariable);
         InteractionFocus.DisableButton();
         Destroy(gameObject);
     }

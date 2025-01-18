@@ -4,7 +4,13 @@ using UnityEngine;
 public enum LockerVariable
 { 
     None,
-    LatticeWindow
+    LatticeWindow,
+    WoodBrick,
+    Rope,
+    Wire,
+    Codelock,
+    Lock
+
 }
 public class InteractionLocker : InteractableAbstract
 {
