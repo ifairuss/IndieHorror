@@ -52,9 +52,6 @@ public class InteractionLocker : InteractableAbstract
             rb.AddForce(Vector3.forward * 3, ForceMode.Impulse);
             gameObject.layer = 0;
             _locked = false;
-
-            if (_lockerVariable == LockerVariable.LatticeWindow) { KeyManager.LatticeLocker = true; }
-
         }
     }
 }

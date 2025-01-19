@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class InteractionDoor : InteractableAbstract
@@ -16,9 +17,20 @@ public class InteractionDoor : InteractableAbstract
     [SerializeField] private string FirstText = "";
     [SerializeField] private string ButtonText = "[E]";
 
+    private void Start()
+    {
+        ClosedDoor();
+    }
+
     private void Update()
     {
         DoorAnimation();
+    }
+
+    private void ClosedDoor()
+    {
+        if (_key != KeyVariable.None) { _isLoockedDoor = false; }
+        else { _isLoockedDoor = true;}
     }
 
     private void DoorAnimation()
@@ -42,15 +54,13 @@ public class InteractionDoor : InteractableAbstract
     }
     public override void OnInteractable()
     {
-        if (!_isLoockedDoor)
+        if (!_isLoockedDoor && KeyManager.KeyVariables[_key] == true) { _isLoockedDoor = KeyManager.KeyVariables[_key]; }
+
+        if (_isLoockedDoor)
         {
             if (_isOpenDoor == false) 
                  {_isOpenDoor = true;}
             else {_isOpenDoor = false;}
-        }
-        else
-        {
-
         }
     }
     public override void OnLoseFocus()

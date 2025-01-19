@@ -5,6 +5,7 @@ public class InteractionKey : InteractableAbstract
     [Header("UI Text Settings")]
     [SerializeField] private string _firstText = "First";
     [SerializeField] private string _buttonText = "Button";
+    [SerializeField] private KeyVariable _keyVariable;
 
     public override void OnFocus()
     {
@@ -13,6 +14,7 @@ public class InteractionKey : InteractableAbstract
     }
     public override void OnInteractable()
     {
+        KeyManager.KeyUnlock(_keyVariable);
         InteractionFocus.DisableButton();
         Destroy(gameObject);
     }
@@ -20,4 +22,6 @@ public class InteractionKey : InteractableAbstract
     {
         InteractionFocus.DisableButton();
     }
+
+
 }
