@@ -7,6 +7,8 @@ public class Movement : MonoBehaviour
     public bool DurringCrouchAnimation;
     public bool isCrouching = false;
 
+    private bool _isStairsZone;
+
     private Camera _playerCamera;
     private CharacterController _playerCharacterController;
 
@@ -31,6 +33,7 @@ public class Movement : MonoBehaviour
 
         _playerCharacterController.Move(direction);
     }
+
     public void CameraInputPC( float lookSpeedY, float lookSpeedX, int lookXLimit)
     {
         rotationX += -Input.GetAxis("Mouse Y") * lookSpeedX;
@@ -56,14 +59,8 @@ public class Movement : MonoBehaviour
         Vector3 standingCenter, Vector3 crouchingCenter)
     {
 
-        if (isCrouching && Physics.Raycast(_playerCamera.transform.position, Vector3.up, 4f))
-        {
-            Debug.DrawRay(_playerCamera.transform.position, new Vector3(0, 6f, 0), Color.red);
+        if (isCrouching && Physics.Raycast(_playerCamera.transform.position, Vector3.up, 4f)) {
             yield break;
-        }
-        else
-        {
-            Debug.DrawRay(_playerCamera.transform.position, new Vector3(0, 6f, 0), Color.green);
         }
 
         DurringCrouchAnimation = true;

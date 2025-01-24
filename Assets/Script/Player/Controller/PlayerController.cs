@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 public enum PlatformSwitch
 {
     Android,
@@ -53,7 +52,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _crouchBobAmount;
     [Space]
     [Header("Interaction Setting")]
-    [SerializeField] private Vector3 _interactionRayPoint;
     [SerializeField] private float _interactionDistance;
     [SerializeField] private LayerMask _interactionLayer;
 
@@ -93,7 +91,7 @@ public class PlayerController : MonoBehaviour
 
         if (_canAnimation)
         {
-            _animationController.ActiveAnimation(_inputController.isFlashlite, _inventoryManager.Revolver, _inventoryManager.Knife, _inventoryManager.Crowbar);
+            //_animationController.ActiveAnimation(_inputController.isFlashlite, _inventoryManager.Revolver, _inventoryManager.Knife, _inventoryManager.Crowbar);
         }
 
         _fpsCounter.FPS();
@@ -103,11 +101,21 @@ public class PlayerController : MonoBehaviour
     {
         MoveController();
         CameraController();
+        InteractionController();
         InputController();
         CrouchController();
-        InteractionController();
         StaminaController();
 
+
+        if (Platforms == PlatformSwitch.Android) {
+
+            _inputController.IsCrouchingAndroidInput(_moveController);
+            _inputController.ShowShootButton(_inventoryManager);
+            _inputController.FlashliteButtonShow(_inventoryManager);
+            _inputController.ShowDropButton(_inventoryManager);
+
+            if (_staminaManager.Stamina() < 1 || _inputController.isCrouch == true) { _inputController.isRunning = false; }
+        }
     }
 
     private void MoveController()
@@ -165,8 +173,8 @@ public class PlayerController : MonoBehaviour
     {
         if (_canInteraction)
         {
-            _interactionManager.HandleInteractionCheck(_interactionRayPoint, _interactionDistance);
-            _interactionManager.HandleInteractionInput(_inputController.InteractionKey(), _interactionRayPoint, _interactionDistance, _interactionLayer);
+            _interactionManager.HandleInteractionCheck(_interactionDistance);
+            _interactionManager.HandleInteractionInput(_inputController.InteractionKey(), _interactionDistance, _interactionLayer);
         }
     }
 
@@ -175,5 +183,51 @@ public class PlayerController : MonoBehaviour
         _staminaManager.StaminaSubtraction(_inputController.isRunning, _inputController.isCrouch, 
                                            _moveController.PlayerCharacterController.isGrounded,
                                            _staminaUseMultiplier, _timeBeforeStaminaRegenStarts, _staminaTimeIncrement, _staminaValueIncrement, _maxStamina);
+    }
+
+    public void AndroidInteractionInput()
+    {
+        if (Platforms == PlatformSwitch.Android)
+        {
+            _interactionManager.InteractionAndroidInput(_interactionDistance, _interactionLayer);
+        }
+    }
+
+    public void AndroidCrouchInput()
+    {
+        if (Platforms == PlatformSwitch.Android)
+        {
+            if (!_moveController.DurringCrouchAnimation)
+            {
+                StartCoroutine(_moveController.CrouchStand(_standingHeight, _crouchingHeight, _timeToCrouch, _standingCenter, _crouchingCenter));
+            }
+        }
+    }
+
+    public void AndroidRunInput()
+    {
+        if (Platforms == PlatformSwitch.Android)
+        {
+            if (_moveController.PlayerCharacterController.isGrounded)
+            {
+                _inputController.IsRunningAndroidInput(_staminaManager.Stamina());
+            }
+        }
+    }
+
+    public void AndroidFlashliteInput()
+    {
+        if (Platforms == PlatformSwitch.Android)
+        {
+            _inputController.FlashLiteAndroidInput();
+        }
+    }
+
+    public void AndroidDropInput()
+    {
+        if (Platforms == PlatformSwitch.Android)
+        {
+            
+        }
     }
 }

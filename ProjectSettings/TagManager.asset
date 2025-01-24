@@ -13,6 +13,8 @@ TagManager:
   - StaminaUI
   - PC
   - Android
+  - StairsZone
+  - ExitStairsZone
   layers:
   - Default
   - TransparentFX

@@ -54,14 +54,17 @@ public class InteractionDoor : InteractableAbstract
     }
     public override void OnInteractable()
     {
-        if (!_isLoockedDoor && KeyManager.KeyVariables[_key] == true) { _isLoockedDoor = KeyManager.KeyVariables[_key]; }
+        if (!_isLoockedDoor) { _isLoockedDoor = KeyManager.KeyVariables[_key]; }
 
         if (_isLoockedDoor)
         {
-            if (_isOpenDoor == false) 
-                 {_isOpenDoor = true;}
-            else {_isOpenDoor = false;}
+            if (_isOpenDoor == false)
+            { _isOpenDoor = true; }
+            else { _isOpenDoor = false; }
         }
+        else { print("No key"); }
+
+        gameObject.layer = 10;
     }
     public override void OnLoseFocus()
     {

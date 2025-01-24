@@ -1,8 +1,8 @@
+using System;
 using UnityEngine;
 
 public abstract class InteractableAbstract : MonoBehaviour
 {
-    [Space]
     [HideInInspector] public InventoryManager InventoryManager;
     [HideInInspector] public InteractionFocus InteractionFocus;
     [HideInInspector] public PressKeyInteraction SwitchText;

@@ -45,13 +45,6 @@ public class InteractionLocker : InteractableAbstract
 
     private void DestroyLocker()
     {
-        if (InventoryManager.Crowbar == true)
-        {
-            Rigidbody rb = transform.AddComponent<Rigidbody>();
-            rb.mass = 50f;
-            rb.AddForce(Vector3.forward * 3, ForceMode.Impulse);
-            gameObject.layer = 0;
-            _locked = false;
-        }
+
     }
 }
