@@ -15,6 +15,7 @@ TagManager:
   - Android
   - StairsZone
   - ExitStairsZone
+  - CavesHole
   layers:
   - Default
   - TransparentFX

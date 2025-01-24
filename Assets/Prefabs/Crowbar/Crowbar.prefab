@@ -155,7 +155,9 @@ MonoBehaviour:
   InteractionFocus: {fileID: 0}
   SwitchText: {fileID: 0}
   PlayerController: {fileID: 0}
+  MovementController: {fileID: 0}
   KeyManager: {fileID: 0}
+  _rightHandItems: 3
   FirstText: Crowbar
   ButtonText: 'Press [E]'
 --- !u!114 &5438261832361438560

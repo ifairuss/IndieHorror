@@ -31,6 +31,8 @@ public class Movement : MonoBehaviour
     {
         if (!_playerCharacterController.isGrounded) { direction.y += gravity * Time.deltaTime; }
 
+        SwitchSlopeValue();
+
         _playerCharacterController.Move(direction);
     }
 
@@ -112,5 +114,17 @@ public class Movement : MonoBehaviour
                 _defaulthYPos + Mathf.Sin(_timer) * idleAmount,
                 _playerCamera.transform.localPosition.z);
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "StairsZone") { _isStairsZone = true; }
+        if (other.gameObject.tag == "ExitStairsZone") { _isStairsZone = false; }
+    }
+
+    private void SwitchSlopeValue()
+    {
+        if (_isStairsZone) { _playerCharacterController.slopeLimit = 180f; }
+        else { _playerCharacterController.slopeLimit = 60f; }
     }
 }
