@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public enum PlatformSwitch
 {
@@ -94,11 +94,6 @@ public class PlayerController : MonoBehaviour
             _animationController.ActiveAnimation(_inputController.isFlashlite, _inventoryManager.Revolver, _inventoryManager.Knife, _inventoryManager.Crowbar);
         }
 
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            _inventoryManager.DropItem(ItemsRightHand.nothing ,_moveController);
-        }
-
         _fpsCounter.FPS();
     }
 
@@ -170,6 +165,8 @@ public class PlayerController : MonoBehaviour
             _inputController.CrouchAndStand(_moveController);
             _inputController.RuningStaminaCheck(_staminaManager.Stamina());
 
+            if (Input.GetKeyDown(_inputController.ShootButtonPC()) && _inventoryManager.Revolver == true) { print("Піу піу"); };
+
             if (_inventoryManager.Flashlite == true) { _inputController.FlashLite(); }
         }
     }
@@ -228,11 +225,19 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void AndroidButtonShoot()
+    {
+        if (Platforms == PlatformSwitch.Android)
+        {
+            _inputController.ShootButtonAndroid(_inventoryManager);
+        }
+    }
+
     public void AndroidDropInput()
     {
         if (Platforms == PlatformSwitch.Android)
         {
-            
+            _inputController.DropButton(_inventoryManager, this);
         }
     }
 }

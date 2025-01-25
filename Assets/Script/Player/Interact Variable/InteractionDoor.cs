@@ -49,7 +49,7 @@ public class InteractionDoor : InteractableAbstract
 
     public override void OnFocus()
     {
-        InteractionFocus.ActiveButton();
+        SwitchText.ShowText(PlayerController.Platforms);
         SwitchText.SwitchText(FirstText, ButtonText, PlayerController.Platforms);
     }
     public override void OnInteractable()
@@ -68,6 +68,6 @@ public class InteractionDoor : InteractableAbstract
     }
     public override void OnLoseFocus()
     {
-        InteractionFocus.DisableButton();
+        SwitchText.HideText(PlayerController.Platforms);
     }
 }

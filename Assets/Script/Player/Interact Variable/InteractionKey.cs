@@ -9,18 +9,18 @@ public class InteractionKey : InteractableAbstract
 
     public override void OnFocus()
     {
-        InteractionFocus.ActiveButton();
+        SwitchText.ShowText(PlayerController.Platforms);
         SwitchText.SwitchText(_firstText, _buttonText, PlayerController.Platforms);
     }
     public override void OnInteractable()
     {
         KeyManager.KeyUnlock(_keyVariable);
-        InteractionFocus.DisableButton();
+        SwitchText.HideText(PlayerController.Platforms);
         Destroy(gameObject);
     }
     public override void OnLoseFocus()
     {
-        InteractionFocus.DisableButton();
+        SwitchText.HideText(PlayerController.Platforms);
     }
 
 

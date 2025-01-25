@@ -63,12 +63,13 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public void DropItem(ItemsRightHand items, Movement movement)
+    public void DropItem(ItemsRightHand items, PlayerController playerController)
     {
         if (RightHandGameObject == null) { return; }
 
-        Instantiate(RightHandGameObject, movement.PlayerCharacterController.transform.position + Vector3.up * 2 + Vector3.forward * 5, Quaternion.Euler(0, 0, 90));
-        RightHandGameObject = null;
+        Instantiate(RightHandGameObject, playerController.transform.position + Vector3.up * 2 + playerController.transform.forward * 5, Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)));
+
+        PickUpItem(items);
     }
 
     public void FlashLitePickUp(bool flashLite)

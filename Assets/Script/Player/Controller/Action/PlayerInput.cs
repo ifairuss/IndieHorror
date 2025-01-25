@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerInput : MonoBehaviour
@@ -9,6 +9,7 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private KeyCode _crouchInput = KeyCode.C;
     [SerializeField] private KeyCode _flashLite = KeyCode.F;
     [SerializeField] private KeyCode _interaction = KeyCode.E;
+    [SerializeField] private KeyCode _shootGun = KeyCode.Mouse0;
 
     // Ctr + K and Ctr + C -- Comments
     // Ctr + K and Ctr + U -- UnComments
@@ -88,6 +89,11 @@ public class PlayerInput : MonoBehaviour
             isCrouch = true;
         else if (Input.GetKey(_crouchInput) && !_movement.DurringCrouchAnimation && _movement.PlayerCharacterController.isGrounded && isCrouch == true)
             isCrouch = false;
+    }
+
+    public KeyCode ShootButtonPC()
+    {
+        return _shootGun;
     }
 
     public void FlashLite()
@@ -171,14 +177,27 @@ public class PlayerInput : MonoBehaviour
     }
     public void ShowShootButton(InventoryManager inventory)
     {
-        //if (inventory.Revolver == true)
-        //{
-        //    _shootAndroidInput.gameObject.SetActive(true);
-        //}
-        //else
-        //{
-        //    _shootAndroidInput.gameObject.SetActive(false);
-        //}
+        if (inventory.Revolver == true)
+        {
+            _shootAndroidInput.gameObject.SetActive(true);
+        }
+        else
+        {
+            _shootAndroidInput.gameObject.SetActive(false);
+        }
+    }
+
+    public void ShootButtonAndroid(InventoryManager inventory)
+    {
+        if (inventory.Revolver == true)
+        {
+            print("Піу піу");
+        }
+    }
+
+    public void DropButton(InventoryManager inventory, PlayerController playerController)
+    {
+        inventory.DropItem(ItemsRightHand.nothing, playerController);
     }
 
     public void ShowDropButton(InventoryManager inventory)

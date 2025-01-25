@@ -27,20 +27,20 @@ public class InteractionLocker : InteractableAbstract
 
     public override void OnFocus()
     {
-        InteractionFocus.ActiveButton();
+        SwitchText.ShowText(PlayerController.Platforms);
         SwitchText.SwitchText(_firstText, _buttonText, PlayerController.Platforms);
     }
     public override void OnInteractable()
     {
         if (_locked)
         {
+            SwitchText.HideText(PlayerController.Platforms);
             DestroyLocker();
         }
-        InteractionFocus.DisableButton();
     }
     public override void OnLoseFocus()
     {
-        InteractionFocus.DisableButton();
+        SwitchText.HideText(PlayerController.Platforms);
     }
 
     private void DestroyLocker()

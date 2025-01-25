@@ -1,10 +1,8 @@
-using System;
 using UnityEngine;
 
 public abstract class InteractableAbstract : MonoBehaviour
 {
     [HideInInspector] public InventoryManager InventoryManager;
-    [HideInInspector] public InteractionFocus InteractionFocus;
     [HideInInspector] public PressKeyInteraction SwitchText;
     [HideInInspector] public PlayerController PlayerController;
     [HideInInspector] public KeyManager KeyManager;
@@ -14,7 +12,6 @@ public abstract class InteractableAbstract : MonoBehaviour
         gameObject.layer = 10;
 
         InventoryManager = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<InventoryManager>();
-        InteractionFocus = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<InteractionFocus>();
         KeyManager = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<KeyManager>();
         SwitchText = GameObject.FindGameObjectWithTag("PressKey").GetComponent<PressKeyInteraction>();
         PlayerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();

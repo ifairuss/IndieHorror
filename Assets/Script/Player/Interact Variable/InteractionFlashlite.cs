@@ -8,17 +8,17 @@ public class InteractionFlashlite : InteractableAbstract
 
     public override void OnFocus()
     {
-        InteractionFocus.ActiveButton();
+        SwitchText.ShowText(PlayerController.Platforms);
         SwitchText.SwitchText(FirstText, ButtonText, PlayerController.Platforms);
     }
     public override void OnInteractable()
     {
         InventoryManager.FlashLitePickUp(true);
-        InteractionFocus.DisableButton();
+        SwitchText.HideText(PlayerController.Platforms);
         Destroy(gameObject);
     }
     public override void OnLoseFocus()
     {
-        InteractionFocus.DisableButton();
+        SwitchText.HideText(PlayerController.Platforms);
     }
 }

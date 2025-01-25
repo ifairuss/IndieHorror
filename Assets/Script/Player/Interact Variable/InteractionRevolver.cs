@@ -9,16 +9,18 @@ public class InteractionRevolver : InteractableAbstract
 
     public override void OnFocus()
     {
-        InteractionFocus.ActiveButton();
+        SwitchText.ShowText(PlayerController.Platforms);
         SwitchText.SwitchText(FirstText, ButtonText, PlayerController.Platforms);
     }
     public override void OnInteractable()
     {
-        InteractionFocus.DisableButton();
+        InventoryManager.DropItem(ItemsRightHand.nothing, PlayerController);
+        InventoryManager.PickUpItem(ItemsRightHand.Revolver);
+        SwitchText.HideText(PlayerController.Platforms);
         Destroy(gameObject);
     }
     public override void OnLoseFocus()
     {
-        InteractionFocus.DisableButton();
+        SwitchText.HideText(PlayerController.Platforms);
     }
 }
