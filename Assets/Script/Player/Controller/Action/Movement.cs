@@ -20,6 +20,7 @@ public class Movement : MonoBehaviour
     private float _timer;
 
     public CharacterController PlayerCharacterController => _playerCharacterController;
+    public Camera PlayerCamera => _playerCamera;
 
     private void Start()
     {

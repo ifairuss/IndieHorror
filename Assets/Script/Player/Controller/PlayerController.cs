@@ -63,6 +63,7 @@ public class PlayerController : MonoBehaviour
     private InventoryManager _inventoryManager;
     private StaminaSystem _staminaManager;
     private FixedTouchField _fixedTouchField;
+    private Gun _gunController;
 
     private void Awake()
     {
@@ -74,6 +75,7 @@ public class PlayerController : MonoBehaviour
         _fpsCounter = GameObject.FindGameObjectWithTag("FPS").GetComponent<FpsCounter>();
         _inventoryManager = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<InventoryManager>();
         _fixedTouchField = GameObject.FindGameObjectWithTag("Android").GetComponentInChildren<FixedTouchField>();
+        _gunController = GameObject.FindGameObjectWithTag("Gun").GetComponentInChildren<Gun>();
 
         if (Platforms == PlatformSwitch.PC)
         {
@@ -165,7 +167,7 @@ public class PlayerController : MonoBehaviour
             _inputController.CrouchAndStand(_moveController);
             _inputController.RuningStaminaCheck(_staminaManager.Stamina());
 
-            if (Input.GetKeyDown(_inputController.ShootButtonPC()) && _inventoryManager.Revolver == true) { print("Піу піу"); };
+            if (Input.GetKeyDown(_inputController.ShootButtonPC()) && _inventoryManager.Revolver == true && _animationController.AnimationRevolverEnded == true) { _gunController.Shoot(); };
 
             if (_inventoryManager.Flashlite == true) { _inputController.FlashLite(); }
         }

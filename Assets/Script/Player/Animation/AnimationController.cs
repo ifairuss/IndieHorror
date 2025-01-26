@@ -8,6 +8,8 @@ public class AnimationController : MonoBehaviour
     private LeftHandAnimation _leftHandAnimation;
     private RightHandAnimation _rightHandAnimation;
 
+     public bool AnimationRevolverEnded;
+
     private void Start()
     {
         _leftHand = GameObject.FindGameObjectWithTag("LeftHand").GetComponent<Animator>();

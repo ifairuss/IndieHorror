@@ -16,6 +16,8 @@ TagManager:
   - StairsZone
   - ExitStairsZone
   - CavesHole
+  - Gun
+  - ParticleContainer
   layers:
   - Default
   - TransparentFX
@@ -25,8 +27,8 @@ TagManager:
   - UI
   - HandCamera
   - Player
-  - 
-  - 
+  - Bullet
+  - Enemy
   - Interaction
   - 
   - 
