@@ -11,12 +11,17 @@ public abstract class Gun : MonoBehaviour
     public GameObject PrefabBullet;
     public ParticleSystem MuzzleFlash;
 
-    public Movement MovementController;
+    [HideInInspector] public Movement MovementController;
+    [HideInInspector] public ShakeCameraOnShoot ShakeCameraController;
+    [HideInInspector] public AnimationController AnimationGun;
 
     private void Awake()
     {
         MuzzleFlash.gameObject.SetActive(false);
+
+        ShakeCameraController = GetComponent<ShakeCameraOnShoot>();
         MovementController = GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>();
+        AnimationGun = GameObject.FindGameObjectWithTag("Player").GetComponent<AnimationController>();
     }
 
     public virtual void Shoot() {}

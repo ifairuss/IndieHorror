@@ -8,4 +8,9 @@ public class RightHandAnimation : MonoBehaviour
         animator.SetBool("isKnife", isKnife);
         animator.SetBool("isCrowbar", isCrowbar);
     }
+
+    public void GunTrigger(Animator animator)
+    {
+        animator.SetTrigger("RevolverShoot");
+    }
 }

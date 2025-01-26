@@ -18,6 +18,8 @@ public class Revolver : Gun
             Bullet bullet = Instantiate(PrefabBullet, SpawnPointBullets.position, MovementController.PlayerCamera.transform.rotation).GetComponent<Bullet>();
             bullet.MoveBullet(MovementController.PlayerCamera);
             MuzzleFlash.Play();
+            AnimationGun.RevolverShootAnimation();
+            ShakeCameraController.ShakeCamera(MovementController);
             TimeBetweenShoot = NewTimeBetweenShoot;
         }
     }

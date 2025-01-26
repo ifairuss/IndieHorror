@@ -10,6 +10,7 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private KeyCode _flashLite = KeyCode.F;
     [SerializeField] private KeyCode _interaction = KeyCode.E;
     [SerializeField] private KeyCode _shootGun = KeyCode.Mouse0;
+    [SerializeField] private KeyCode _dropButton = KeyCode.G;
 
     // Ctr + K and Ctr + C -- Comments
     // Ctr + K and Ctr + U -- UnComments
@@ -94,6 +95,11 @@ public class PlayerInput : MonoBehaviour
     public KeyCode ShootButtonPC()
     {
         return _shootGun;
+    }
+
+    public KeyCode DropButtonPC()
+    {
+        return _dropButton;
     }
 
     public void FlashLite()
@@ -187,11 +193,11 @@ public class PlayerInput : MonoBehaviour
         }
     }
 
-    public void ShootButtonAndroid(InventoryManager inventory)
+    public void ShootButtonAndroid(InventoryManager inventory, Gun gunController, AnimationController animationController)
     {
-        if (inventory.Revolver == true)
+        if (inventory.Revolver == true && animationController.AnimationRevolverEnded == true)
         {
-            print("Піу піу");
+            gunController.Shoot();
         }
     }
 

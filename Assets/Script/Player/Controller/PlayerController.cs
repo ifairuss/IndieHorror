@@ -131,9 +131,9 @@ public class PlayerController : MonoBehaviour
             _moveController.Move(_inputController.Android(_walkSpeed, _runSpeed, _crouchSpeed, Platforms), _gravity);
         }
 
-        _moveController.HandlHeadBobbing(_inputController.MoveDirection, _inputController.isRunning,
-        _crouchBobSpeed, _runBobSpeed, _walkBobSpeed, _idleBobSpeed,
-        _crouchBobAmount, _runBobAmount, _walkBobAmount, _idleBobAmount);
+            _moveController.HandlHeadBobbing(_inputController.MoveDirection, _inputController.isRunning,
+             _crouchBobSpeed, _runBobSpeed, _walkBobSpeed, _idleBobSpeed,
+             _crouchBobAmount, _runBobAmount, _walkBobAmount, _idleBobAmount);
     }
 
     private void CrouchController()
@@ -167,6 +167,7 @@ public class PlayerController : MonoBehaviour
             _inputController.CrouchAndStand(_moveController);
             _inputController.RuningStaminaCheck(_staminaManager.Stamina());
 
+            if (Input.GetKeyDown(_inputController.DropButtonPC())) { _inventoryManager.DropItem(ItemsRightHand.nothing, this); }
             if (Input.GetKeyDown(_inputController.ShootButtonPC()) && _inventoryManager.Revolver == true && _animationController.AnimationRevolverEnded == true) { _gunController.Shoot(); };
 
             if (_inventoryManager.Flashlite == true) { _inputController.FlashLite(); }
@@ -231,7 +232,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Platforms == PlatformSwitch.Android)
         {
-            _inputController.ShootButtonAndroid(_inventoryManager);
+            _inputController.ShootButtonAndroid(_inventoryManager, _gunController, _animationController);
         }
     }
 

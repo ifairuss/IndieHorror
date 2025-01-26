@@ -24,4 +24,9 @@ public class AnimationController : MonoBehaviour
         _leftHandAnimation.TakeInFlashlite(_leftHand, isFlashlite);
         _rightHandAnimation.PickUpItems(_rightHand, isRevolver, isKnife, isCrowbar);
     }
+
+    public void RevolverShootAnimation()
+    {
+        _rightHandAnimation.GunTrigger(_rightHand);
+    }
 }

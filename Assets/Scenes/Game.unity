@@ -3120,7 +3120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94622a94069eab148982c39d71f58ece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Platforms: 1
+  Platforms: 0
   _canMove: 1
   _canAnimation: 1
   _canInteraction: 1
@@ -3170,6 +3170,7 @@ MonoBehaviour:
   _flashLite: 102
   _interaction: 101
   _shootGun: 323
+  _dropButton: 103
   _runAndroidInput: {fileID: 2103386671}
   _dropAndroidInput: {fileID: 538719141}
   _crouchAndroidInput: {fileID: 1090609426}
@@ -4869,37 +4870,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4068732887779152, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
   m_PrefabInstance: {fileID: 856017779}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &197889020
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 197889021}
-  m_Layer: 0
-  m_Name: ParticleContainer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &197889021
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197889020}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &198771131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26786,6 +26756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1101210651}
   - component: {fileID: 1101210650}
+  - component: {fileID: 1101210652}
   m_Layer: 0
   m_Name: GunManager
   m_TagString: Gun
@@ -26812,6 +26783,8 @@ MonoBehaviour:
   PrefabBullet: {fileID: 2034355895130003953, guid: f8a51fd5a99ba0b44ab03f05bfb69e1b, type: 3}
   MuzzleFlash: {fileID: 1893937780}
   MovementController: {fileID: 0}
+  ShakeCameraController: {fileID: 0}
+  AnimationGun: {fileID: 0}
 --- !u!4 &1101210651
 Transform:
   m_ObjectHideFlags: 0
@@ -26827,6 +26800,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1101210652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101210649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71106f81fb7736b438302b66f1306afd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _durationOfAnimation: 0.2
+  _randomnessOfAnimation: 0
+  _vibrationOfAnimation: 15
+  _strengthOfAnimation: {x: 0.05, y: 0.05, z: 0}
 --- !u!1001 &1101289654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78061,5 +78050,4 @@ SceneRoots:
   - {fileID: 1876879422}
   - {fileID: 1101210651}
   - {fileID: 814680557}
-  - {fileID: 197889021}
   - {fileID: 3074026448870275105}

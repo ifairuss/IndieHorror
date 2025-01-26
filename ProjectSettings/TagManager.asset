@@ -17,7 +17,6 @@ TagManager:
   - ExitStairsZone
   - CavesHole
   - Gun
-  - ParticleContainer
   layers:
   - Default
   - TransparentFX
