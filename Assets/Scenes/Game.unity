@@ -3120,7 +3120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94622a94069eab148982c39d71f58ece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Platforms: 0
+  Platforms: 1
   _canMove: 1
   _canAnimation: 1
   _canInteraction: 1
@@ -66070,6 +66070,7 @@ GameObject:
   - component: {fileID: 3074026448870275105}
   - component: {fileID: 3074026448870275107}
   - component: {fileID: 3074026448870275106}
+  - component: {fileID: 3074026448870275108}
   m_Layer: 0
   m_Name: Cannibals
   m_TagString: Untagged
@@ -66429,7 +66430,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!136 &3074026448870275107
 CapsuleCollider:
@@ -66454,6 +66455,28 @@ CapsuleCollider:
   m_Height: 15.892807
   m_Direction: 1
   m_Center: {x: 0.61680603, y: 7.8480377, z: 0.2516327}
+--- !u!95 &3074026448870275108
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2441780477177176731}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c9bab72453ef0364b9183f9c1d48c5a6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &3110975948027170587
 Transform:
   m_ObjectHideFlags: 0
@@ -75201,7 +75224,7 @@ Transform:
   m_GameObject: {fileID: 7193881191873377523}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.4502283, y: 9.266186, z: 0.40515158}
+  m_LocalPosition: {x: 0.4502283, y: 9.266186, z: 0.4051516}
   m_LocalScale: {x: 15.839314, y: 15.839314, z: 15.839314}
   m_ConstrainProportionsScale: 0
   m_Children:
