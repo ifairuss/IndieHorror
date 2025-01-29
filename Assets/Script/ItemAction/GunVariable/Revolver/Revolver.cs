@@ -12,7 +12,7 @@ public class Revolver : Gun
 
     public override void Shoot()
     {
-        if (_canShoot == true)
+        if (_canShoot == true && AmmountBullet > 0)
         {
             MuzzleFlash.gameObject.SetActive(true);
             Bullet bullet = Instantiate(PrefabBullet, SpawnPointBullets.position, MovementController.PlayerCamera.transform.rotation).GetComponent<Bullet>();
@@ -21,6 +21,7 @@ public class Revolver : Gun
             AnimationGun.RevolverShootAnimation();
             ShakeCameraController.ShakeCamera();
             TimeBetweenShoot = NewTimeBetweenShoot;
+            AmmountBullet -= 1;
         }
     }
 }
