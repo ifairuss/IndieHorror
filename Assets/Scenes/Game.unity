@@ -652,7 +652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 30479141}
   - component: {fileID: 30479142}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -795,7 +795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 52560404}
   - component: {fileID: 52560405}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1285,7 +1285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 68142040}
   - component: {fileID: 68142041}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1384,7 +1384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 79063965}
   - component: {fileID: 79063966}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1437,7 +1437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 81807386}
   - component: {fileID: 81807387}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1663,7 +1663,7 @@ GameObject:
   - component: {fileID: 93819926}
   - component: {fileID: 93819928}
   - component: {fileID: 93819927}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1840,7 +1840,7 @@ GameObject:
   - component: {fileID: 101084146}
   - component: {fileID: 101084148}
   - component: {fileID: 101084147}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2014,7 +2014,7 @@ GameObject:
   - component: {fileID: 103032544}
   - component: {fileID: 103032546}
   - component: {fileID: 103032545}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: broken window (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2229,7 +2229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1027271016803200666, guid: 870abe8e92bb2ae4fa98e2692d489f51, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1027271016803200666, guid: 870abe8e92bb2ae4fa98e2692d489f51, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2237,7 +2237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9152545153509711504, guid: 870abe8e92bb2ae4fa98e2692d489f51, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 9152545153509711504, guid: 870abe8e92bb2ae4fa98e2692d489f51, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2451,7 +2451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 106996259}
   - component: {fileID: 106996260}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2547,7 +2547,7 @@ GameObject:
   m_Component:
   - component: {fileID: 121872609}
   - component: {fileID: 121872610}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2692,7 +2692,7 @@ GameObject:
   - component: {fileID: 124845599}
   - component: {fileID: 124845601}
   - component: {fileID: 124845600}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2777,7 +2777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 125696602}
   - component: {fileID: 125696603}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3714,7 +3714,7 @@ GameObject:
   m_Component:
   - component: {fileID: 161952412}
   - component: {fileID: 161952413}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4262,7 +4262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 178211054}
   - component: {fileID: 178211055}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4441,7 +4441,7 @@ GameObject:
   - component: {fileID: 187663833}
   - component: {fileID: 187663835}
   - component: {fileID: 187663834}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4527,7 +4527,7 @@ GameObject:
   - component: {fileID: 189881944}
   - component: {fileID: 189881946}
   - component: {fileID: 189881945}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4790,7 +4790,7 @@ GameObject:
   - component: {fileID: 196020910}
   - component: {fileID: 196020912}
   - component: {fileID: 196020911}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5097,7 +5097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 204749472}
   - component: {fileID: 204749473}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5294,7 +5294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 210380578}
   - component: {fileID: 210380579}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5490,7 +5490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 239233100}
   - component: {fileID: 239233101}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5586,7 +5586,7 @@ GameObject:
   - component: {fileID: 242228881}
   - component: {fileID: 242228880}
   - component: {fileID: 242228879}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: cabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5938,7 +5938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 248327846}
   - component: {fileID: 248327847}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6024,7 +6024,7 @@ GameObject:
   m_Component:
   - component: {fileID: 251242448}
   - component: {fileID: 251242449}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Roof (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6669,7 +6669,7 @@ GameObject:
   - component: {fileID: 279601068}
   - component: {fileID: 279601070}
   - component: {fileID: 279601069}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6755,6 +6755,10 @@ PrefabInstance:
     - target: {fileID: 1527157921294498, guid: ab874f990274e1b459678e1986a28931, type: 3}
       propertyPath: m_Name
       value: Rug3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527157921294498, guid: ab874f990274e1b459678e1986a28931, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1527157921294498, guid: ab874f990274e1b459678e1986a28931, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7991,7 +7995,7 @@ GameObject:
   - component: {fileID: 331525514}
   - component: {fileID: 331525516}
   - component: {fileID: 331525515}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Window (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8135,7 +8139,7 @@ GameObject:
   - component: {fileID: 336840322}
   - component: {fileID: 336840324}
   - component: {fileID: 336840323}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8220,7 +8224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 337048431}
   - component: {fileID: 337048432}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallLattice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8272,8 +8276,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 852520723}
     m_Modifications:
     - target: {fileID: 1093286597711778, guid: a401c43a1bdde404d89a6bef17ff2c0d, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1093286597711778, guid: a401c43a1bdde404d89a6bef17ff2c0d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405864455095438, guid: a401c43a1bdde404d89a6bef17ff2c0d, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1405864455095438, guid: a401c43a1bdde404d89a6bef17ff2c0d, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8284,8 +8296,16 @@ PrefabInstance:
       value: Bathtub
       objectReference: {fileID: 0}
     - target: {fileID: 1784596945529646, guid: a401c43a1bdde404d89a6bef17ff2c0d, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784596945529646, guid: a401c43a1bdde404d89a6bef17ff2c0d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1847114073889304, guid: a401c43a1bdde404d89a6bef17ff2c0d, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1847114073889304, guid: a401c43a1bdde404d89a6bef17ff2c0d, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8700,8 +8720,16 @@ PrefabInstance:
       value: Broken wheelchair with blood
       objectReference: {fileID: 0}
     - target: {fileID: 1110225402299318926, guid: 3af6176e1598452469f2c1c6307ccba3, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110225402299318926, guid: 3af6176e1598452469f2c1c6307ccba3, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4281412299843457356, guid: 3af6176e1598452469f2c1c6307ccba3, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4281412299843457356, guid: 3af6176e1598452469f2c1c6307ccba3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8775,7 +8803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 355000902}
   - component: {fileID: 355000903}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8828,7 +8856,7 @@ GameObject:
   m_Component:
   - component: {fileID: 364898010}
   - component: {fileID: 364898011}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8982,7 +9010,7 @@ GameObject:
   m_Component:
   - component: {fileID: 374653681}
   - component: {fileID: 374653682}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9950,7 +9978,7 @@ GameObject:
   - component: {fileID: 408697507}
   - component: {fileID: 408697509}
   - component: {fileID: 408697508}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10132,7 +10160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 423171628}
   - component: {fileID: 423171629}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10367,7 +10395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 434705348}
   - component: {fileID: 434705349}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10421,7 +10449,7 @@ GameObject:
   - component: {fileID: 435298710}
   - component: {fileID: 435298712}
   - component: {fileID: 435298711}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10536,6 +10564,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d04824cb29706e94da051e6b40e7d025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &436783209 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8254583552929660031, guid: cc775c881b537874f989aa73e15853b6, type: 3}
+  m_PrefabInstance: {fileID: 1180153445}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &445025017
 GameObject:
   m_ObjectHideFlags: 0
@@ -10547,7 +10580,7 @@ GameObject:
   - component: {fileID: 445025018}
   - component: {fileID: 445025020}
   - component: {fileID: 445025019}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11252,7 +11285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 488004928}
   - component: {fileID: 488004929}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11488,7 +11521,7 @@ GameObject:
   - component: {fileID: 501595854}
   - component: {fileID: 501595856}
   - component: {fileID: 501595855}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11573,7 +11606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 502571179}
   - component: {fileID: 502571180}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11720,6 +11753,10 @@ PrefabInstance:
       value: ToiletRollHolder
       objectReference: {fileID: 0}
     - target: {fileID: 1204691987407596, guid: 1810125aa94e737428b1b725dc3592a1, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1204691987407596, guid: 1810125aa94e737428b1b725dc3592a1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11789,12 +11826,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1960070824}
     m_Modifications:
     - target: {fileID: 4669095043451997875, guid: 84bafcf644c5e4642abba44a10141b09, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669095043451997875, guid: 84bafcf644c5e4642abba44a10141b09, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8300207197259772741, guid: 84bafcf644c5e4642abba44a10141b09, type: 3}
       propertyPath: m_Name
       value: Broken wooden chair (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300207197259772741, guid: 84bafcf644c5e4642abba44a10141b09, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8300207197259772741, guid: 84bafcf644c5e4642abba44a10141b09, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11942,7 +11987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 519367738}
   - component: {fileID: 519367739}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12521,7 +12566,7 @@ GameObject:
   - component: {fileID: 546148963}
   - component: {fileID: 546148965}
   - component: {fileID: 546148964}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12717,7 +12762,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 550340037}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12758,7 +12803,7 @@ GameObject:
   - component: {fileID: 550675614}
   - component: {fileID: 550675615}
   - component: {fileID: 550675616}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps
   m_TagString: ExitStairsZone
   m_Icon: {fileID: 0}
@@ -12854,7 +12899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 561215300}
   - component: {fileID: 561215301}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12991,7 +13036,7 @@ GameObject:
   - component: {fileID: 564296873}
   - component: {fileID: 564296875}
   - component: {fileID: 564296874}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13318,7 +13363,7 @@ GameObject:
   - component: {fileID: 577915477}
   - component: {fileID: 577915479}
   - component: {fileID: 577915478}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13767,7 +13812,7 @@ GameObject:
   m_Component:
   - component: {fileID: 594409503}
   - component: {fileID: 594409504}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14212,7 +14257,7 @@ GameObject:
   - component: {fileID: 612567216}
   - component: {fileID: 612567218}
   - component: {fileID: 612567217}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14547,7 +14592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 620537959}
   - component: {fileID: 620537960}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14686,7 +14731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 624995529}
   - component: {fileID: 624995530}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14771,7 +14816,7 @@ GameObject:
   - component: {fileID: 626896405}
   - component: {fileID: 626896407}
   - component: {fileID: 626896406}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15158,12 +15203,24 @@ PrefabInstance:
       value: Toilet
       objectReference: {fileID: 0}
     - target: {fileID: 1098210806119866, guid: fcf33ec5356e5264a93d7b3ebc620838, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098210806119866, guid: fcf33ec5356e5264a93d7b3ebc620838, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1548792856721960, guid: fcf33ec5356e5264a93d7b3ebc620838, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1548792856721960, guid: fcf33ec5356e5264a93d7b3ebc620838, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577002399918240, guid: fcf33ec5356e5264a93d7b3ebc620838, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1577002399918240, guid: fcf33ec5356e5264a93d7b3ebc620838, type: 3}
       propertyPath: m_IsActive
@@ -15172,6 +15229,10 @@ PrefabInstance:
     - target: {fileID: 1577002399918240, guid: fcf33ec5356e5264a93d7b3ebc620838, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651369130797328, guid: fcf33ec5356e5264a93d7b3ebc620838, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1651369130797328, guid: fcf33ec5356e5264a93d7b3ebc620838, type: 3}
       propertyPath: m_IsActive
@@ -15416,7 +15477,7 @@ GameObject:
   - component: {fileID: 668474024}
   - component: {fileID: 668474026}
   - component: {fileID: 668474025}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15792,7 +15853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 680759927}
   - component: {fileID: 680759928}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15988,6 +16049,10 @@ PrefabInstance:
       value: Rug2
       objectReference: {fileID: 0}
     - target: {fileID: 1949193786786396, guid: 46d2992933c6968418c33e934904d7ad, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1949193786786396, guid: 46d2992933c6968418c33e934904d7ad, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -16108,7 +16173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 712292182}
   - component: {fileID: 712292183}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16163,7 +16228,7 @@ GameObject:
   - component: {fileID: 712973575}
   - component: {fileID: 712973574}
   - component: {fileID: 712973576}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16269,7 +16334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 713185919}
   - component: {fileID: 713185920}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16650,7 +16715,7 @@ GameObject:
   m_Component:
   - component: {fileID: 726852452}
   - component: {fileID: 726852453}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17214,7 +17279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 750322562}
   - component: {fileID: 750322563}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17267,7 +17332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 752586361}
   - component: {fileID: 752586362}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17927,7 +17992,7 @@ GameObject:
   - component: {fileID: 375575346}
   - component: {fileID: 375575345}
   - component: {fileID: 375575344}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: desk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17996,7 +18061,7 @@ GameObject:
   m_Component:
   - component: {fileID: 784851497}
   - component: {fileID: 784851498}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18543,7 +18608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 799292473}
   - component: {fileID: 799292474}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18686,7 +18751,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: bc09823b4a881ae48a3b1f5243401f03, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: bc09823b4a881ae48a3b1f5243401f03, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -19139,12 +19204,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1960070824}
     m_Modifications:
     - target: {fileID: 4669095043451997875, guid: 84bafcf644c5e4642abba44a10141b09, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669095043451997875, guid: 84bafcf644c5e4642abba44a10141b09, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8300207197259772741, guid: 84bafcf644c5e4642abba44a10141b09, type: 3}
       propertyPath: m_Name
       value: Broken wooden chair
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300207197259772741, guid: 84bafcf644c5e4642abba44a10141b09, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8300207197259772741, guid: 84bafcf644c5e4642abba44a10141b09, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -19205,7 +19278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 814245591}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings-Under
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19590,7 +19663,7 @@ GameObject:
   m_Component:
   - component: {fileID: 824483976}
   - component: {fileID: 824483977}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19654,7 +19727,7 @@ GameObject:
   - component: {fileID: 834029133}
   - component: {fileID: 834029135}
   - component: {fileID: 834029134}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Window  (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19910,7 +19983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 852031833}
   - component: {fileID: 852031834}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19962,7 +20035,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 852520723}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ' BathRoom'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20000,7 +20073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 852662244}
   - component: {fileID: 852662245}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20054,6 +20127,10 @@ PrefabInstance:
     - target: {fileID: 1260501652137496, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
       propertyPath: m_Name
       value: Rug1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260501652137496, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1260501652137496, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20114,7 +20191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 861635969}
   - component: {fileID: 861635970}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20395,7 +20472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ec505f73967a98c48a090df01f10c44b, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ec505f73967a98c48a090df01f10c44b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20605,7 +20682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 871080317}
   - component: {fileID: 871080318}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20762,7 +20839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 879377096}
   - component: {fileID: 879377097}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20815,7 +20892,7 @@ GameObject:
   m_Component:
   - component: {fileID: 880595685}
   - component: {fileID: 880595686}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20868,7 +20945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 884270540}
   - component: {fileID: 884270541}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20926,7 +21003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 887654265}
   - component: {fileID: 887654266}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20980,7 +21057,7 @@ GameObject:
   - component: {fileID: 888340646}
   - component: {fileID: 888340648}
   - component: {fileID: 888340647}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21065,7 +21142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 889006660}
   - component: {fileID: 889006661}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21171,7 +21248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 894427017}
   - component: {fileID: 894427018}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21367,7 +21444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 901373297}
   - component: {fileID: 901373298}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21512,7 +21589,7 @@ GameObject:
   - component: {fileID: 903649232}
   - component: {fileID: 903649234}
   - component: {fileID: 903649233}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21882,7 +21959,7 @@ GameObject:
   - component: {fileID: 918198751}
   - component: {fileID: 918198753}
   - component: {fileID: 918198752}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22228,7 +22305,7 @@ GameObject:
   - component: {fileID: 932033760}
   - component: {fileID: 932033762}
   - component: {fileID: 932033761}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22346,7 +22423,7 @@ GameObject:
   - component: {fileID: 939305321}
   - component: {fileID: 939305320}
   - component: {fileID: 939305319}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: door2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22712,7 +22789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 943509644}
   - component: {fileID: 943509645}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22866,7 +22943,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 953729511}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Start-Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23007,7 +23084,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1335
+    m_Bits: 3383
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -23203,7 +23280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 973110519}
   - component: {fileID: 973110520}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23619,7 +23696,7 @@ GameObject:
   - component: {fileID: 976744078}
   - component: {fileID: 976744080}
   - component: {fileID: 976744079}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23964,7 +24041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 979398441}
   - component: {fileID: 979398442}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24471,7 +24548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 999299692}
   - component: {fileID: 999299693}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24791,7 +24868,7 @@ GameObject:
   - component: {fileID: 1016849389}
   - component: {fileID: 1016849388}
   - component: {fileID: 1016849387}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: cabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24939,6 +25016,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6111408807475193673, guid: fb5ece791d9906b439f4e3ca4cc633ed, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111408807475193673, guid: fb5ece791d9906b439f4e3ca4cc633ed, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -24965,6 +25046,10 @@ PrefabInstance:
     - target: {fileID: 8029877131337359211, guid: fb5ece791d9906b439f4e3ca4cc633ed, type: 3}
       propertyPath: m_Name
       value: Broken window
+      objectReference: {fileID: 0}
+    - target: {fileID: 8029877131337359211, guid: fb5ece791d9906b439f4e3ca4cc633ed, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8029877131337359211, guid: fb5ece791d9906b439f4e3ca4cc633ed, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25404,7 +25489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1035349377}
   - component: {fileID: 1035349378}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25703,7 +25788,7 @@ GameObject:
   - component: {fileID: 1042268226}
   - component: {fileID: 1042268228}
   - component: {fileID: 1042268227}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Window  (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26083,7 +26168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1066195522}
   - component: {fileID: 1066195523}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26136,7 +26221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1066668387}
   - component: {fileID: 1066668388}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26254,7 +26339,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1072882618}
   - component: {fileID: 1072882619}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26307,7 +26392,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1075829507}
   - component: {fileID: 1075829508}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26815,7 +26900,8 @@ MonoBehaviour:
   _durationOfAnimation: 0.2
   _randomnessOfAnimation: 0
   _vibrationOfAnimation: 15
-  _strengthOfAnimation: {x: 0.05, y: 0.05, z: 0}
+  _strengthOfAnimation: {x: 3, y: 3, z: 0}
+  _objectShake: {fileID: 436783209}
 --- !u!1001 &1101289654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26909,7 +26995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1102729116}
   - component: {fileID: 1102729117}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27074,7 +27160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1107030960}
   - component: {fileID: 1107030961}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27384,7 +27470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1114328777}
   - component: {fileID: 1114328778}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27629,7 +27715,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1122839927}
   - component: {fileID: 1122839928}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27772,7 +27858,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1126191826}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27995,7 +28081,7 @@ GameObject:
   - component: {fileID: 1127511340}
   - component: {fileID: 1127511342}
   - component: {fileID: 1127511341}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28213,7 +28299,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1134397622}
   - component: {fileID: 1134397623}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28497,7 +28583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1142688657}
   - component: {fileID: 1142688658}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28852,7 +28938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1161387764}
   - component: {fileID: 1161387765}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29189,7 +29275,7 @@ GameObject:
   - component: {fileID: 1171830764}
   - component: {fileID: 1171830766}
   - component: {fileID: 1171830765}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Window  (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29852,7 +29938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1180634427}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29949,7 +30035,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1189528800}
   - component: {fileID: 1189528801}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30184,7 +30270,7 @@ GameObject:
   - component: {fileID: 1195347066}
   - component: {fileID: 1195347068}
   - component: {fileID: 1195347067}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Window  (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30268,7 +30354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1196170850}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Roof-Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30379,7 +30465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1201770727}
   - component: {fileID: 1201770728}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30433,7 +30519,7 @@ GameObject:
   - component: {fileID: 1204039793}
   - component: {fileID: 1204039795}
   - component: {fileID: 1204039794}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30687,7 +30773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1211894924}
   - component: {fileID: 1211894925}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31037,7 +31123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1224887719}
   - component: {fileID: 1224887720}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31207,7 +31293,7 @@ GameObject:
   - component: {fileID: 1234504884}
   - component: {fileID: 1234504886}
   - component: {fileID: 1234504885}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Window (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31733,7 +31819,7 @@ GameObject:
   - component: {fileID: 1255874916}
   - component: {fileID: 1255874918}
   - component: {fileID: 1255874917}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31819,7 +31905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1257578304}
   - component: {fileID: 1257578305}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33549,7 +33635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1262215803}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Guest-Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34840,7 +34926,7 @@ GameObject:
   - component: {fileID: 1266865980}
   - component: {fileID: 1266865979}
   - component: {fileID: 1266865981}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34954,7 +35040,7 @@ GameObject:
   - component: {fileID: 1270158474}
   - component: {fileID: 1270158476}
   - component: {fileID: 1270158475}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35045,7 +35131,7 @@ GameObject:
   - component: {fileID: 1276812096}
   - component: {fileID: 1276812098}
   - component: {fileID: 1276812097}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35130,7 +35216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1276940993}
   - component: {fileID: 1276940994}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Roof (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35269,7 +35355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1281132788}
   - component: {fileID: 1281132789}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35570,6 +35656,10 @@ PrefabInstance:
       value: -0.284
       objectReference: {fileID: 0}
     - target: {fileID: 4134072274999792967, guid: 7eaeaf649770040418b98b8605bdb96f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134072274999792967, guid: 7eaeaf649770040418b98b8605bdb96f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -35616,6 +35706,10 @@ PrefabInstance:
     - target: {fileID: 4940637988233214010, guid: 7eaeaf649770040418b98b8605bdb96f, type: 3}
       propertyPath: m_Name
       value: Window (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940637988233214010, guid: 7eaeaf649770040418b98b8605bdb96f, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4940637988233214010, guid: 7eaeaf649770040418b98b8605bdb96f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -36629,7 +36723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1336891276}
   - component: {fileID: 1336891277}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36797,7 +36891,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1350980969}
   - component: {fileID: 1350980970}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36883,7 +36977,7 @@ GameObject:
   - component: {fileID: 1355671092}
   - component: {fileID: 1355671091}
   - component: {fileID: 1355671090}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: cabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37127,12 +37221,20 @@ PrefabInstance:
       value: -1.954126
       objectReference: {fileID: 0}
     - target: {fileID: 4669095043451997875, guid: 84bafcf644c5e4642abba44a10141b09, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669095043451997875, guid: 84bafcf644c5e4642abba44a10141b09, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8300207197259772741, guid: 84bafcf644c5e4642abba44a10141b09, type: 3}
       propertyPath: m_Name
       value: Broken wooden chair
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300207197259772741, guid: 84bafcf644c5e4642abba44a10141b09, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8300207197259772741, guid: 84bafcf644c5e4642abba44a10141b09, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -37797,7 +37899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370177540}
   - component: {fileID: 1370177541}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37888,7 +37990,7 @@ GameObject:
   - component: {fileID: 1378614819}
   - component: {fileID: 1378614821}
   - component: {fileID: 1378614820}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38286,7 +38388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1385159440}
   - component: {fileID: 1385159441}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38535,6 +38637,10 @@ PrefabInstance:
       value: Rug3 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1527157921294498, guid: ab874f990274e1b459678e1986a28931, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527157921294498, guid: ab874f990274e1b459678e1986a28931, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -38625,7 +38731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1398170376}
   - component: {fileID: 1398170377}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38760,7 +38866,7 @@ GameObject:
   - component: {fileID: 1400440221}
   - component: {fileID: 1400440223}
   - component: {fileID: 1400440222}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39260,7 +39366,7 @@ GameObject:
   - component: {fileID: 1418638910}
   - component: {fileID: 1418638912}
   - component: {fileID: 1418638911}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39950,7 +40056,7 @@ GameObject:
   - component: {fileID: 1437395230}
   - component: {fileID: 1437395232}
   - component: {fileID: 1437395231}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40076,7 +40182,7 @@ GameObject:
   - component: {fileID: 1437745364}
   - component: {fileID: 1437745366}
   - component: {fileID: 1437745365}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40239,7 +40345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1462433733}
   - component: {fileID: 1462433734}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40756,7 +40862,7 @@ GameObject:
   - component: {fileID: 1475356931}
   - component: {fileID: 1475356933}
   - component: {fileID: 1475356932}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40843,7 +40949,7 @@ GameObject:
   - component: {fileID: 1476221629}
   - component: {fileID: 1476221631}
   - component: {fileID: 1476221630}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40928,7 +41034,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1476555768}
   - component: {fileID: 1476555769}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41098,7 +41204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1485335570}
   - component: {fileID: 1485335571}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41758,7 +41864,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1503673480}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Guest room (Floor 2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41796,7 +41902,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1505711211}
   - component: {fileID: 1505711212}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41929,7 +42035,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1507935462}
   - component: {fileID: 1507935463}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41989,7 +42095,7 @@ GameObject:
   - component: {fileID: 1511440765}
   - component: {fileID: 1511440764}
   - component: {fileID: 1511440766}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42183,7 +42289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1516024962}
   - component: {fileID: 1516024963}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Roof (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42362,7 +42468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1525940210}
   - component: {fileID: 1525940211}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42567,7 +42673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ec505f73967a98c48a090df01f10c44b, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ec505f73967a98c48a090df01f10c44b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -42949,7 +43055,7 @@ GameObject:
   - component: {fileID: 1552583577}
   - component: {fileID: 1552583579}
   - component: {fileID: 1552583578}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43033,7 +43139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1553975681}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: Room-Lock-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43307,7 +43413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1565136044}
   - component: {fileID: 1565136045}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43360,7 +43466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1571324568}
   - component: {fileID: 1571324569}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (1)
   m_TagString: StairsZone
   m_Icon: {fileID: 0}
@@ -43424,7 +43530,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1574802376}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43462,7 +43568,7 @@ GameObject:
   - component: {fileID: 1574820532}
   - component: {fileID: 1574820534}
   - component: {fileID: 1574820533}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43594,8 +43700,16 @@ PrefabInstance:
       value: table
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 295fb7dc98b3d6f459c24900f4807eca, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 295fb7dc98b3d6f459c24900f4807eca, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 295fb7dc98b3d6f459c24900f4807eca, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 295fb7dc98b3d6f459c24900f4807eca, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -44006,6 +44120,10 @@ PrefabInstance:
       value: -0.284
       objectReference: {fileID: 0}
     - target: {fileID: 4134072274999792967, guid: 7eaeaf649770040418b98b8605bdb96f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134072274999792967, guid: 7eaeaf649770040418b98b8605bdb96f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -44052,6 +44170,10 @@ PrefabInstance:
     - target: {fileID: 4940637988233214010, guid: 7eaeaf649770040418b98b8605bdb96f, type: 3}
       propertyPath: m_Name
       value: Window
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940637988233214010, guid: 7eaeaf649770040418b98b8605bdb96f, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4940637988233214010, guid: 7eaeaf649770040418b98b8605bdb96f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -44244,7 +44366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1598910735}
   - component: {fileID: 1598910736}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44299,7 +44421,7 @@ GameObject:
   - component: {fileID: 1599212406}
   - component: {fileID: 1599212405}
   - component: {fileID: 1599212407}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44670,7 +44792,7 @@ GameObject:
   - component: {fileID: 1606194593}
   - component: {fileID: 1606194595}
   - component: {fileID: 1606194594}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Window  (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44921,7 +45043,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1612715476}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44957,7 +45079,7 @@ GameObject:
   - component: {fileID: 1614830011}
   - component: {fileID: 1614830013}
   - component: {fileID: 1614830012}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45043,7 +45165,7 @@ GameObject:
   - component: {fileID: 1614959875}
   - component: {fileID: 1614959877}
   - component: {fileID: 1614959876}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45540,7 +45662,7 @@ GameObject:
   - component: {fileID: 1641995609}
   - component: {fileID: 1641995611}
   - component: {fileID: 1641995610}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45737,7 +45859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1649374176}
   - component: {fileID: 1649374177}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Roof (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45909,7 +46031,7 @@ GameObject:
   - component: {fileID: 1655489755}
   - component: {fileID: 1655489754}
   - component: {fileID: 1655489756}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46104,12 +46226,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 852520723}
     m_Modifications:
     - target: {fileID: 1048903011104994, guid: 33af882668a154e45888b123f70ee627, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1048903011104994, guid: 33af882668a154e45888b123f70ee627, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1048903011104994, guid: 33af882668a154e45888b123f70ee627, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056135091110754, guid: 33af882668a154e45888b123f70ee627, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1056135091110754, guid: 33af882668a154e45888b123f70ee627, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -46120,8 +46250,16 @@ PrefabInstance:
       value: Sink
       objectReference: {fileID: 0}
     - target: {fileID: 1070336316640508, guid: 33af882668a154e45888b123f70ee627, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070336316640508, guid: 33af882668a154e45888b123f70ee627, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967176002269386, guid: 33af882668a154e45888b123f70ee627, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1967176002269386, guid: 33af882668a154e45888b123f70ee627, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -46295,7 +46433,7 @@ GameObject:
   - component: {fileID: 1667261345}
   - component: {fileID: 1667261344}
   - component: {fileID: 1667261343}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: door1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46476,7 +46614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1673058432}
   - component: {fileID: 1673058433}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46529,7 +46667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1673523965}
   - component: {fileID: 1673523966}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46829,7 +46967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1678931576}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47013,7 +47151,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 850515784000476412, guid: cf9769da514c444459977f2c3b46e5c3, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 850515784000476412, guid: cf9769da514c444459977f2c3b46e5c3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -47025,7 +47163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3421327610655245683, guid: cf9769da514c444459977f2c3b46e5c3, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3421327610655245683, guid: cf9769da514c444459977f2c3b46e5c3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -47397,7 +47535,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1702201520}
   - component: {fileID: 1702201521}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47451,7 +47589,7 @@ GameObject:
   - component: {fileID: 1703185410}
   - component: {fileID: 1703185412}
   - component: {fileID: 1703185411}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47729,7 +47867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1712242110}
   - component: {fileID: 1712242111}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47807,7 +47945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1718200894}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: All-Furniture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47880,7 +48018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1726078160}
   - component: {fileID: 1726078161}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47933,7 +48071,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1727927634}
   - component: {fileID: 1727927635}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47987,7 +48125,7 @@ GameObject:
   - component: {fileID: 1728651245}
   - component: {fileID: 1728651244}
   - component: {fileID: 1728651243}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: House-Ladder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48105,7 +48243,7 @@ GameObject:
   - component: {fileID: 1734247769}
   - component: {fileID: 1734247771}
   - component: {fileID: 1734247770}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48421,7 +48559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1744649069}
   - component: {fileID: 1744649070}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48581,7 +48719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1757193639}
   - component: {fileID: 1757193640}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48751,7 +48889,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1764119897}
   - component: {fileID: 1764119898}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49073,7 +49211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1783925741}
   - component: {fileID: 1783925742}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49212,7 +49350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1788379061}
   - component: {fileID: 1788379062}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49769,7 +49907,7 @@ GameObject:
   - component: {fileID: 1795850941}
   - component: {fileID: 1795850943}
   - component: {fileID: 1795850942}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50028,7 +50166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1802803960}
   - component: {fileID: 1802803961}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50744,7 +50882,7 @@ GameObject:
   - component: {fileID: 1837429728}
   - component: {fileID: 1837429730}
   - component: {fileID: 1837429729}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51278,7 +51416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1864370039}
   - component: {fileID: 1864370040}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51469,7 +51607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1869656959}
   - component: {fileID: 1869656960}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Roof (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51805,7 +51943,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1027271016803200666, guid: 870abe8e92bb2ae4fa98e2692d489f51, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1027271016803200666, guid: 870abe8e92bb2ae4fa98e2692d489f51, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -51817,7 +51955,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 99fda0c698b17c940b0414ae314d6ecb, type: 2}
     - target: {fileID: 9152545153509711504, guid: 870abe8e92bb2ae4fa98e2692d489f51, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 9152545153509711504, guid: 870abe8e92bb2ae4fa98e2692d489f51, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -57278,7 +57416,7 @@ GameObject:
   - component: {fileID: 1895305832}
   - component: {fileID: 1895305834}
   - component: {fileID: 1895305833}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57476,7 +57614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1901024131}
   - component: {fileID: 1901024132}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58170,7 +58308,7 @@ GameObject:
   - component: {fileID: 1914517562}
   - component: {fileID: 1914517564}
   - component: {fileID: 1914517563}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58309,7 +58447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1916022846}
   - component: {fileID: 1916022847}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58475,7 +58613,7 @@ GameObject:
   - component: {fileID: 1917330963}
   - component: {fileID: 1917330965}
   - component: {fileID: 1917330964}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58561,7 +58699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1918200475}
   - component: {fileID: 1918200476}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58619,7 +58757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1919274658}
   - component: {fileID: 1919274659}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Roof (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58737,7 +58875,7 @@ GameObject:
   - component: {fileID: 1926512934}
   - component: {fileID: 1926512936}
   - component: {fileID: 1926512935}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58822,7 +58960,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1930926480}
   - component: {fileID: 1930926481}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59288,7 +59426,7 @@ GameObject:
   - component: {fileID: 1954144754}
   - component: {fileID: 1954144756}
   - component: {fileID: 1954144755}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Railings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59374,7 +59512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1954557192}
   - component: {fileID: 1954557193}
-  m_Layer: 2
+  m_Layer: 11
   m_Name: exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59430,6 +59568,10 @@ PrefabInstance:
       value: Wooden table
       objectReference: {fileID: 0}
     - target: {fileID: 2060888363734840028, guid: 157eb6e39e01ebf4b9728380df90f6a9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2060888363734840028, guid: 157eb6e39e01ebf4b9728380df90f6a9, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -59472,6 +59614,10 @@ PrefabInstance:
     - target: {fileID: 3441620309295308013, guid: 157eb6e39e01ebf4b9728380df90f6a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094071135644421706, guid: 157eb6e39e01ebf4b9728380df90f6a9, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8094071135644421706, guid: 157eb6e39e01ebf4b9728380df90f6a9, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -59657,7 +59803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1975071395}
   - component: {fileID: 1975071396}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59710,7 +59856,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1975780961}
   - component: {fileID: 1975780962}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59763,7 +59909,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1977144783}
   - component: {fileID: 1977144784}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60023,7 +60169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1983570921}
   - component: {fileID: 1983570922}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60187,7 +60333,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1994108017}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Guest room (Floor 1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60440,7 +60586,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2007577838}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Decoration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61417,7 +61563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2035900004}
   - component: {fileID: 2035900005}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61687,7 +61833,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2041912735}
   - component: {fileID: 2041912736}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61857,7 +62003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2052517115}
   - component: {fileID: 2052517116}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62166,7 +62312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2055236787}
   - component: {fileID: 2055236788}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62220,7 +62366,7 @@ GameObject:
   - component: {fileID: 2055241599}
   - component: {fileID: 2055241601}
   - component: {fileID: 2055241600}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62443,7 +62589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2066436583}
   - component: {fileID: 2066436584}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62604,7 +62750,7 @@ GameObject:
   - component: {fileID: 2091344558}
   - component: {fileID: 2091344560}
   - component: {fileID: 2091344559}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63281,7 +63427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2108573447}
   - component: {fileID: 2108573448}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Steps (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64480,7 +64626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5820881782511011298, guid: 71ae3e09e08c9b443bbc5f5bb033a109, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5820881782511011298, guid: 71ae3e09e08c9b443bbc5f5bb033a109, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -64488,7 +64634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6631133692676700452, guid: 71ae3e09e08c9b443bbc5f5bb033a109, type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6631133692676700452, guid: 71ae3e09e08c9b443bbc5f5bb033a109, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -64612,7 +64758,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4137112339631999}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64634,7 +64780,7 @@ GameObject:
   - component: {fileID: 33329862024007625}
   - component: {fileID: 33329862024007624}
   - component: {fileID: 33329862024007627}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: _BathroomShelf_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65313,7 +65459,7 @@ GameObject:
   - component: {fileID: 543450653010914046}
   - component: {fileID: 3469287836860310875}
   - component: {fileID: 1711813856289132945}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Indie-Horror-House +
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67897,7 +68043,7 @@ GameObject:
   - component: {fileID: 3507346241630879512}
   - component: {fileID: 3507346241630879514}
   - component: {fileID: 3507346241630879513}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68059,7 +68205,7 @@ GameObject:
   - component: {fileID: 1966098777156426754}
   - component: {fileID: 908552560351136866}
   - component: {fileID: 3590876144835270313}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LatticeWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74920,7 +75066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5172634725117088425}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74939,7 +75085,7 @@ GameObject:
   - component: {fileID: 5172634725113762937}
   - component: {fileID: 5172634725115141071}
   - component: {fileID: 5172634725117097204}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77034,7 +77180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7649866845844033394}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LatticeWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -8,26 +8,27 @@ public class ShakeCameraOnShoot : MonoBehaviour
     [SerializeField] private float _randomnessOfAnimation = 90f;
     [SerializeField] private int _vibrationOfAnimation = 10;
     [SerializeField] private Vector3 _strengthOfAnimation;
+    [SerializeField] private Transform _objectShake;
 
 
-    public void ShakeCamera(Movement playerCamera)
+    public void ShakeCamera()
     {
-        playerCamera.PlayerCamera.transform
+        _objectShake.transform
             .DOShakePosition(_durationOfAnimation,
             _strengthOfAnimation,
             _vibrationOfAnimation,
             _randomnessOfAnimation,
             false, true, ShakeRandomnessMode.Full)
-            .SetEase(Ease.InOutBounce)
-            .SetLink(playerCamera.PlayerCamera.gameObject);
+            .SetEase(Ease.OutExpo)
+            .SetLink(_objectShake.gameObject);
 
-        playerCamera.PlayerCamera.transform
+        _objectShake.transform
             .DOShakeRotation(_durationOfAnimation,
             _strengthOfAnimation,
             _vibrationOfAnimation,
             _randomnessOfAnimation,
              true, ShakeRandomnessMode.Full)
             .SetEase(Ease.Linear)
-            .SetLink(playerCamera.PlayerCamera.gameObject);
+            .SetLink(_objectShake.gameObject);
     }
 }

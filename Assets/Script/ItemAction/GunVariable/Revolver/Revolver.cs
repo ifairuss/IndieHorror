@@ -19,7 +19,7 @@ public class Revolver : Gun
             bullet.MoveBullet(MovementController.PlayerCamera);
             MuzzleFlash.Play();
             AnimationGun.RevolverShootAnimation();
-            ShakeCameraController.ShakeCamera(MovementController);
+            ShakeCameraController.ShakeCamera();
             TimeBetweenShoot = NewTimeBetweenShoot;
         }
     }
