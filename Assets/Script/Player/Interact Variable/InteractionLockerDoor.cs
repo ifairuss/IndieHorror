@@ -6,6 +6,7 @@ public class InteractionLockerDoor : InteractableAbstract
     [SerializeField] private float _openAngle;
     [SerializeField] private float _closedAngle;
     [SerializeField] private float _speedAnimation;
+    [SerializeField] private float _smoothSpeedAnimation = 5;
     [Space]
     [SerializeField] private bool _isLoocked;
     [SerializeField] private bool _isOpen;
@@ -37,11 +38,11 @@ public class InteractionLockerDoor : InteractableAbstract
 
         if (_isOpen == true)
         {
-            transform.localRotation = Quaternion.Slerp(currentAngle, Quaternion.Euler(currentAngle.x, _openAngle, currentAngle.z), _speedAnimation * Time.unscaledDeltaTime);
+            transform.localRotation = Quaternion.RotateTowards(currentAngle, Quaternion.Euler(currentAngle.x, _openAngle, currentAngle.z), _speedAnimation / _smoothSpeedAnimation);
         }
         else
         {
-            transform.localRotation = Quaternion.Slerp(currentAngle, Quaternion.Euler(currentAngle.x, _closedAngle, currentAngle.z), _speedAnimation * Time.unscaledDeltaTime);
+            transform.localRotation = Quaternion.RotateTowards(currentAngle, Quaternion.Euler(currentAngle.x, _closedAngle, currentAngle.z), _speedAnimation / _smoothSpeedAnimation);
         }
     }
 
