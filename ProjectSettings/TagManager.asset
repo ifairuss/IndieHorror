@@ -17,6 +17,7 @@ TagManager:
   - ExitStairsZone
   - CavesHole
   - Gun
+  - Door
   layers:
   - Default
   - TransparentFX
