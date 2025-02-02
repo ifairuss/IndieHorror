@@ -7,6 +7,11 @@ public class InteractionKey : InteractableAbstract
     [SerializeField] private string _buttonText = "Button";
     [SerializeField] private KeyVariable _keyVariable;
 
+    private void Start()
+    {
+        gameObject.layer = 12;
+    }
+
     public override void OnFocus()
     {
         SwitchText.ShowText(PlayerController.Platforms);

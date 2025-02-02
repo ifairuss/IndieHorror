@@ -18,11 +18,11 @@ public class InteractionManager : MonoBehaviour
     {
         Debug.DrawRay(_playerCamera.transform.position, _playerCamera.transform.forward * interactionDistance, Color.red);
 
-        if (Physics.Raycast(_playerCamera.transform.position, _playerCamera.transform.forward, out RaycastHit hit, interactionDistance) && hit.collider.gameObject.layer == 10)
+        if (Physics.Raycast(_playerCamera.transform.position, _playerCamera.transform.forward, out RaycastHit hit, interactionDistance) && (hit.collider.gameObject.layer == 10 || hit.collider.gameObject.layer == 12))
         {
             Debug.DrawRay(_playerCamera.transform.position, _playerCamera.transform.forward * interactionDistance, Color.green);
 
-            if (hit.collider.gameObject.layer == 10 && (_currentInteraction == null || hit.collider.gameObject.GetInstanceID() != _currentInteraction.GetInstanceID()))
+            if ((hit.collider.gameObject.layer == 10 || hit.collider.gameObject.layer == 12) && (_currentInteraction == null || hit.collider.gameObject.GetInstanceID() != _currentInteraction.GetInstanceID()))
             {
                 hit.collider.TryGetComponent(out _currentInteraction);
 

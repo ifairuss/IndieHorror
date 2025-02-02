@@ -6,6 +6,10 @@ public class InteractionCrowbar : InteractableAbstract
     [SerializeField] private string FirstText = "item";
     [SerializeField] private string ButtonText = "Press [Button]";
 
+    private void Start()
+    {
+        gameObject.layer = 12;
+    }
 
     public override void OnFocus()
     {

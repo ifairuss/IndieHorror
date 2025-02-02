@@ -6,6 +6,11 @@ public class InteractionKnife : InteractableAbstract
     [SerializeField] private string FirstText = "First";
     [SerializeField] private string ButtonText = "Button";
 
+    private void Start()
+    {
+        gameObject.layer = 12;
+    }
+
     public override void OnFocus()
     {
         SwitchText.ShowText(PlayerController.Platforms);
