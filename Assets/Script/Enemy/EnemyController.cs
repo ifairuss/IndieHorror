@@ -1,22 +1,23 @@
 using UnityEngine;
-using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+    [Header("Enemy state")]
+    [SerializeField] private bool _canSeePlayer;
+
     [Header("Enemy sensor preferences")]
-    [SerializeField] private float _distanceView = 10;
-    [SerializeField] private float _angleView = 45;
-    [SerializeField] private float _heightView = 10;
-    [SerializeField] private Color _meshViewColor;
+    [SerializeField] private LayerMask _allObstructionsLayer;
 
     [Header("Enemy points setting")]
     [SerializeField] private Transform[] _movePoints;
 
     private EnemyMoving _enemyMoveController;
+    private AISensor _fieldOfView;
 
     private void Awake()
     {
         _enemyMoveController = GetComponent<EnemyMoving>();
+        _fieldOfView = GetComponentInChildren<AISensor>();
     }
 
     private void Update()
@@ -26,6 +27,8 @@ public class EnemyController : MonoBehaviour
 
     private void EnemyMoveController()
     {
-        _enemyMoveController.EnemyMove(_movePoints);
+        _canSeePlayer = AISensor.CanSeePlayer;
+        _fieldOfView.FieldOfViewEnemy(_allObstructionsLayer);
+        _enemyMoveController.EnemyMove(_movePoints, _canSeePlayer);
     }
 }
