@@ -28,13 +28,38 @@ public class Movement : MonoBehaviour
         _playerCamera = GetComponentInChildren<Camera>();
     }
 
-    public void Move(Vector3 direction, float gravity)
+    public void Move(Vector3 direction, float gravity, float ladderSpeed, LadderTrigger ladderTrigger, PlayerController PlayerPreferences, PlayerInput PlayerInput)
     {
-        if (!_playerCharacterController.isGrounded) { direction.y += gravity * Time.deltaTime; }
+        if (!PlayerInput.isCrouch) { LadderHandler(ladderSpeed, ladderTrigger, PlayerPreferences, PlayerInput); }
+        else { direction.y += gravity * Time.deltaTime; }
+
+        if (!_playerCharacterController.isGrounded && ladderTrigger.IsClimb == false) { direction.y += gravity * Time.deltaTime; }
 
         SwitchSlopeValue();
 
         _playerCharacterController.Move(direction);
+    }
+
+    private void LadderHandler(float ladderSpeed, LadderTrigger ladderTrigger, PlayerController PlayerPreferences, PlayerInput PlayerInput)
+    {
+        if (ladderTrigger.IsClimb == true)
+        {
+
+            float ladderDirection = 0;
+
+            if (PlayerPreferences.Platforms == PlatformSwitch.PC)
+            {
+                ladderDirection = Input.GetAxis("Vertical");
+            }
+            else if (PlayerPreferences.Platforms == PlatformSwitch.Android)
+            {
+                ladderDirection = PlayerInput.PlayerJoystick.Vertical;
+            }
+
+            Vector3 ladder = new Vector3(0, ladderDirection * ladderSpeed, 0);
+
+            _playerCharacterController.Move(ladder * Time.deltaTime);
+        }
     }
 
     public void CameraInputPC( float lookSpeedY, float lookSpeedX, int lookXLimit)

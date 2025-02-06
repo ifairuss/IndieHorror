@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _walkSpeed = 2f;
     [SerializeField] private float _runSpeed = 2f;
     [SerializeField] private float _crouchSpeed = 2f;
+    [SerializeField] private float _ladderSpeed = 2f;
     [SerializeField] private float _gravity = 9.81f;
     [Space]
     [Header("Stamina Parameters")]
@@ -64,6 +65,7 @@ public class PlayerController : MonoBehaviour
     private StaminaSystem _staminaManager;
     private FixedTouchField _fixedTouchField;
     private Gun _gunController;
+    private LadderTrigger _ladderTrigger;
 
     private void Awake()
     {
@@ -76,6 +78,7 @@ public class PlayerController : MonoBehaviour
         _inventoryManager = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<InventoryManager>();
         _fixedTouchField = GameObject.FindGameObjectWithTag("Android").GetComponentInChildren<FixedTouchField>();
         _gunController = GameObject.FindGameObjectWithTag("Gun").GetComponentInChildren<Gun>();
+        _ladderTrigger = GameObject.FindWithTag("LadderTrigger").GetComponent<LadderTrigger>();
 
         if (Platforms == PlatformSwitch.PC)
         {
@@ -124,11 +127,11 @@ public class PlayerController : MonoBehaviour
     {
         if (Platforms == PlatformSwitch.PC)
         {
-            _moveController.Move(_inputController.PC(_walkSpeed, _runSpeed, _crouchSpeed, Platforms), _gravity);
+            _moveController.Move(_inputController.PC(_walkSpeed, _runSpeed, _crouchSpeed, Platforms), _gravity, _ladderSpeed, _ladderTrigger, this , _inputController);
         }
         else if (Platforms == PlatformSwitch.Android)
         {
-            _moveController.Move(_inputController.Android(_walkSpeed, _runSpeed, _crouchSpeed, Platforms), _gravity);
+            _moveController.Move(_inputController.Android(_walkSpeed, _runSpeed, _crouchSpeed, Platforms), _gravity, _ladderSpeed, _ladderTrigger, this , _inputController);
         }
 
             _moveController.HandlHeadBobbing(_inputController.MoveDirection, _inputController.isRunning,

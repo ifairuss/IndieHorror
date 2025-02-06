@@ -45,6 +45,8 @@ public class PlayerInput : MonoBehaviour
     public bool isCrouch;
     public bool isFlashlite;
 
+    public Joystick PlayerJoystick => _joystick;
+
     private float _timerInput = 0.5f;
 
     private void Start()
@@ -150,7 +152,7 @@ public class PlayerInput : MonoBehaviour
 
     public void IsRunningAndroidInput(float currentSprint)
     {
-        if (currentSprint > 1 && !isCrouch)
+        if (currentSprint > 1 && !isCrouch && !isRunning)
         {
             isRunning = true;
         }
