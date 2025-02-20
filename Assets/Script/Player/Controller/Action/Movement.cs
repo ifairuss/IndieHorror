@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     public bool isCrouching = false;
 
     private bool _isStairsZone;
+    private bool _isClimb;
 
     private Camera _playerCamera;
     private CharacterController _playerCharacterController;
@@ -28,21 +29,21 @@ public class Movement : MonoBehaviour
         _playerCamera = GetComponentInChildren<Camera>();
     }
 
-    public void Move(Vector3 direction, float gravity, float ladderSpeed, LadderTrigger ladderTrigger, PlayerController PlayerPreferences, PlayerInput PlayerInput)
+    public void Move(Vector3 direction, float gravity, float ladderSpeed, PlayerController PlayerPreferences, PlayerInput PlayerInput)
     {
-        if (!PlayerInput.isCrouch) { LadderHandler(ladderSpeed, ladderTrigger, PlayerPreferences, PlayerInput); }
+        if (!PlayerInput.isCrouch) { LadderHandler(ladderSpeed, PlayerPreferences, PlayerInput); }
         else { direction.y += gravity * Time.deltaTime; }
 
-        if (!_playerCharacterController.isGrounded && ladderTrigger.IsClimb == false) { direction.y += gravity * Time.deltaTime; }
+        if (!_playerCharacterController.isGrounded && _isClimb == false) { direction.y += gravity * Time.deltaTime; }
 
         SwitchSlopeValue();
 
         _playerCharacterController.Move(direction);
     }
 
-    private void LadderHandler(float ladderSpeed, LadderTrigger ladderTrigger, PlayerController PlayerPreferences, PlayerInput PlayerInput)
+    private void LadderHandler(float ladderSpeed, PlayerController PlayerPreferences, PlayerInput PlayerInput)
     {
-        if (ladderTrigger.IsClimb == true)
+        if (_isClimb == true)
         {
 
             float ladderDirection = 0;
@@ -146,6 +147,12 @@ public class Movement : MonoBehaviour
     {
         if (other.gameObject.tag == "StairsZone") { _isStairsZone = true; }
         if (other.gameObject.tag == "ExitStairsZone") { _isStairsZone = false; }
+        if (other.gameObject.tag == "LadderTrigger") { _isClimb = true; }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "LadderTrigger") { _isClimb = false; }
     }
 
     private void SwitchSlopeValue()
