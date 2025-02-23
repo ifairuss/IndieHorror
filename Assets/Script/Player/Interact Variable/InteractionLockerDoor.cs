@@ -9,8 +9,9 @@ public class InteractionLockerDoor : InteractableAbstract
     [SerializeField] private float _smoothSpeedAnimation = 5;
     [Space]
     [SerializeField] private bool _isLoocked;
-    [SerializeField] private bool _isOpen;
     [SerializeField] private LockerVariable _locker;
+
+    public bool IsOpen;
 
     [Header("UI Text Settings")]
     [SerializeField] private string FirstText = "";
@@ -19,6 +20,8 @@ public class InteractionLockerDoor : InteractableAbstract
     private void Start()
     {
         ClosedDoor();
+
+        gameObject.tag = "LockedDoor";
     }
 
     private void Update()
@@ -36,7 +39,7 @@ public class InteractionLockerDoor : InteractableAbstract
     {
         Quaternion currentAngle = transform.localRotation;
 
-        if (_isOpen == true)
+        if (IsOpen == true)
         {
             transform.localRotation = Quaternion.RotateTowards(currentAngle, Quaternion.Euler(currentAngle.x, _openAngle, currentAngle.z), _speedAnimation / _smoothSpeedAnimation);
         }
@@ -57,9 +60,9 @@ public class InteractionLockerDoor : InteractableAbstract
 
         if (_isLoocked)
         {
-            if (_isOpen == false)
-            { _isOpen = true; }
-            else { _isOpen = false; }
+            if (IsOpen == false)
+            { IsOpen = true; }
+            else { IsOpen = false; }
         }
         else { print("is Locked"); }
 

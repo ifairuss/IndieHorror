@@ -1,4 +1,3 @@
-using System.Linq;
 using UnityEngine;
 
 public class InteractionDoor : InteractableAbstract
@@ -7,12 +6,13 @@ public class InteractionDoor : InteractableAbstract
     [SerializeField] private float _openAngle;
     [SerializeField] private float _closedAngle;
     [SerializeField] private float _speedAnimation;
-    [SerializeField] private float _smoothSpeedAnimation = 5;
+    [SerializeField] private float _smoothSpeedAnimation = 2f;
     [Space]
     [SerializeField] private bool _isLoockedDoor;
-    [SerializeField] private bool _isOpenDoor;
     [SerializeField] private KeyVariable _key;
     [SerializeField] private LockerVariable _locker;
+
+    public bool IsOpenDoor;
 
     [Header("UI Text Settings")]
     [SerializeField] private string FirstText = "";
@@ -38,7 +38,7 @@ public class InteractionDoor : InteractableAbstract
     {
         Quaternion currentAngle = transform.localRotation;
 
-        if (_isOpenDoor == true)
+        if (IsOpenDoor == true)
         {
             transform.localRotation = Quaternion.RotateTowards(currentAngle, Quaternion.Euler(currentAngle.x, _openAngle, currentAngle.z), _speedAnimation / _smoothSpeedAnimation);
         }
@@ -59,9 +59,9 @@ public class InteractionDoor : InteractableAbstract
 
         if (_isLoockedDoor)
         {
-            if (_isOpenDoor == false)
-            { _isOpenDoor = true; }
-            else { _isOpenDoor = false; }
+            if (IsOpenDoor == false)
+            { IsOpenDoor = true; }
+            else { IsOpenDoor = false; }
         }
         else { print("No key"); }
 

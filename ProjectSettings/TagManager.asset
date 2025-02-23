@@ -21,6 +21,7 @@ TagManager:
   - EnemyViewZone
   - EnemyViewPlayer
   - LadderTrigger
+  - LockedDoor
   layers:
   - Default
   - TransparentFX
