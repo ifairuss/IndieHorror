@@ -1,5 +1,3 @@
-using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -14,11 +12,13 @@ public class EnemyMoving : MonoBehaviour
 
     private bool _canAnimation;
 
-    private void Start()
+    public void Initialized()
     {
         _enemyAgent = GetComponent<NavMeshAgent>();
         _player = GameObject.FindWithTag("Player").GetComponent<Transform>();
         _enemyAnimator = GetComponent<Animator>();
+
+        playerPoint.transform.position = transform.position;
     }
 
     public void EnemyMove(Transform[] pointsVariable, bool canSee)

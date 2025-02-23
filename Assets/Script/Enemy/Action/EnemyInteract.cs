@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyInteract : MonoBehaviour
 {
@@ -17,6 +18,11 @@ public class EnemyInteract : MonoBehaviour
             var door = other.gameObject.GetComponent<InteractionLockerDoor>();
 
             door.IsOpen = true;
+        }
+
+        if (other.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 

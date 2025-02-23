@@ -18,6 +18,8 @@ public class EnemyController : MonoBehaviour
     {
         _enemyMoveController = GetComponent<EnemyMoving>();
         _fieldOfView = GetComponentInChildren<AISensor>();
+
+        _enemyMoveController.Initialized();
     }
 
     private void Update()

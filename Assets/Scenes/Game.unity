@@ -2571,7 +2571,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &99477605
 Transform:
@@ -4098,7 +4098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94622a94069eab148982c39d71f58ece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Platforms: 1
+  Platforms: 0
   _canMove: 1
   _canAnimation: 1
   _canInteraction: 1
@@ -4109,7 +4109,7 @@ MonoBehaviour:
   _gravity: -58.86
   _maxStamina: 100
   _staminaUseMultiplier: 35
-  _timeBeforeStaminaRegenStarts: 5
+  _timeBeforeStaminaRegenStarts: 3.5
   _staminaValueIncrement: 1
   _staminaTimeIncrement: 0.05
   _lookXSpeed: 0.5
@@ -5335,7 +5335,7 @@ GameObject:
   m_TagString: LadderTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &170370486
 Transform:
@@ -5388,7 +5388,7 @@ GameObject:
   m_TagString: LadderTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &172090436
 Transform:
@@ -11524,7 +11524,7 @@ GameObject:
   m_TagString: LadderTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &361611432
 Transform:
@@ -12350,7 +12350,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &379825272
 Transform:
@@ -13664,7 +13664,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &433239718
 Transform:
@@ -15634,7 +15634,7 @@ GameObject:
   m_TagString: LadderTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &511289557
 Transform:
@@ -37517,7 +37517,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1183002918
 Transform:
@@ -63927,7 +63927,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1842858156
 Transform:
@@ -71332,7 +71332,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1906450793
 Transform:
@@ -79395,6 +79395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: table
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bc09823b4a881ae48a3b1f5243401f03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc09823b4a881ae48a3b1f5243401f03, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.708038
@@ -81984,12 +81988,12 @@ NavMeshAgent:
   m_Acceleration: 300
   avoidancePriority: 75
   m_AngularSpeed: 300
-  m_StoppingDistance: 4
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 15
-  m_BaseOffset: -0.1
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &3074026448870275110
